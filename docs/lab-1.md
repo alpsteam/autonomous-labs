@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Lab 1: Microservices
-nav_order: 50
+title: Lab 1 Microservices
+nav_order: 5
+permalink: /lab1
+
 ---
 
 # Lab 1: Microservices
