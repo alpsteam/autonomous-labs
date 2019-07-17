@@ -43,6 +43,8 @@ If you want to include an image, the image should be in a folder `/images` and c
 
 This is where the tutorial starts with all steps of the lab. Divide the lab into 3-10 chapters. In each chapter describe all steps, including some screenshots.
 
+All lab resources, e.g. CSVs, code, etc. should be included in the repository.
+
 ## Wercker pipelines for Continous Integration
 
 Should there be a need to highlight code it can be done like this.
