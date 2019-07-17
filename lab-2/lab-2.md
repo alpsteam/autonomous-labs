@@ -7,7 +7,7 @@ title: Lab 2 Some other title
 
 In this lab we will build a small RESTful API with a Helidon microservice. We will connect the microservice to Oracle Autonomous Transaction Processing DB and deploy our application to Kubernetes using a CI/CD pipeline.
 
-[Download lab resources](https://m1nka.github.io/autonomous-labs/lab-2/some-zip-file.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View source code](https://github.com/m1nka/autonomous-labs/lab-2){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Download lab resources](https://m1nka.github.io/autonomous-labs/lab-2/some-zip-file.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View source code](https://github.com/m1nka/autonomous-labs/tree/master/lab-2){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ## Table of contents
 
