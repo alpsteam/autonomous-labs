@@ -5,7 +5,9 @@ title: Lab 1 Template
 
 # 🚀 Labs 1: Sample lab template
 
-Use this as a template to build make your lab guide.
+Use this as a template to build make your lab guide. If you have any resources like `.csv` files or `.zip` files they can be put in the according lab folder in the repository and downloaded like this.
+
+[Download lab resources](https://m1nka.github.io/autonomous-labs/lab-1/some-zip-file.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
 
 ## Table of contents
 
@@ -70,11 +72,4 @@ public class GreetService {
 ## Next steps
 
 Here we can provide some next steps. We should give ideas what the lab participant can do next with the service. Oracle has lots of good resources (blogs etc.) thank we can link. 
-
-## Issues
-
-If there are issues with this lab guide or you have feedback please tell us in the [issues section](https://github.com/m1nka/autonomous-labs-template/issues) of this repository.
-
-
-
 

@@ -1,17 +1,13 @@
 ---
 layout: default
-title: Lab 2
+title: Lab 2 Some other title
 ---
 
-# Lab 2
-
-> First we can provide a very short description with the purpose of the lab, like this: 
+# 🚀 Labs 2: Some other title
 
 In this lab we will build a small RESTful API with a Helidon microservice. We will connect the microservice to Oracle Autonomous Transaction Processing DB and deploy our application to Kubernetes using a CI/CD pipeline.
 
 ## Table of contents
-
-> A table of contents which links to each section, like this: 
 
 * [Prerequisites](#prerequisites)
 * [Introduction to Microservices](#introduction-to-microservices)
@@ -26,16 +22,12 @@ In this lab we will build a small RESTful API with a Helidon microservice. We wi
 
 ## Prerequisites
 
-> Here we can write about prerequisites.
-
 - An Oracle Cloud Account
 - Right permissions
 - This lab will roughly require 200€ in Universal Cloud Credits
 - etc.
 
 ## Introduction to Microservices
-
-> In this section we do an `Introduction to [topic]`.
 
 Here we can write about the technology and why its cool. E.g. describe what is APEX, with some links and perhaps one or two screenshots. Or why are microservices popular and why should you do it with Helidon and Oracle Managed K8s.
 
@@ -78,11 +70,5 @@ public class GreetService {
 ## Next steps
 
 Here we can provide some next steps. We should give ideas what the lab participant can do next with the service. Oracle has lots of good resources (blogs etc.) thank we can link. 
-
-## Issues
-
-If there are issues with this lab guide or you have feedback please tell us in the [issues section](https://github.com/m1nka/autonomous-labs-template/issues) of this repository.
-
-
 
 
