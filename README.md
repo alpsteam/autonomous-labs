@@ -7,7 +7,7 @@ You can get started [here](https://m1nka.github.io/autonomous-labs/).
 
 ## Issues
 
-If there are issues with this lab guide or you have feedback please tell us in the [issues section](https://github.com/m1nka/autonomous-labs-template/issues) of this repository.
+If there are issues with this lab guide or you have feedback please tell us in the [issues section](https://github.com/m1nka/autonomous-labs/issues) of this repository.
 
 
 
