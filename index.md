@@ -5,7 +5,7 @@ permalink: /
 ---
 # 🚀 Autonomous Labs for Oracle Cloud
 
-{: .fs-9 }
+{: .fs-5 }
 
 Autonomous Labs are designed to get started instantly with Oracle Autonomous Database. All labs are hands-on and developers will build a small application to built upon.
 {: .fs-6 .fw-300 }
