@@ -11,18 +11,7 @@ Autonomous Labs are designed to get started instantly with Oracle Autonomous Dat
 
 [Lab 2: Analytics cloud](https://m1nka.github.io/autonomous-labs/lab-2.html) Analyze data with Oracle Analytics Cloud on Oracle Autonomous Data Warehouse
 
-
-[Lab 3: Low Code With APEX](https://m1nka.github.io/autonomous-labs/lab-1.html) | Build your first low code application with Oracle APEX on Oracle Autonomous Transaction Processing
-
-
-## Prerequisites
-
-> Here we can write about prerequisites.
-
-- An Oracle Cloud Account
-- Right permissions
-- This lab will roughly require 200€ in Universal Cloud Credits
-- etc.
+[Lab 3: Low Code With APEX](https://m1nka.github.io/autonomous-labs/lab-1.html) Build your first low code application with Oracle APEX on Oracle Autonomous Transaction Processing
 
 ## Issues
 
