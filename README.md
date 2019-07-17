@@ -5,7 +5,7 @@ Autonomous Labs are designed to get started instantly with Oracle Autonomous Dat
 
 ## Lab 4: Microservices (Helidon) with Oracle Autonomous DB
 
-In this lab we will build a small RESTful API with a Helidon microservice. We will connect the microservice to Oracle Autonomous Transaction Processing and deploy our application to Kubernetes using a CI/CD pipeline.
+First we can provide a very short description with the purpose of the lab, like this: In this lab we will build a small RESTful API with a Helidon microservice. We will connect the microservice to Oracle Autonomous Transaction Processing and deploy our application to Kubernetes using a CI/CD pipeline.
 
 ### Table of contents
 
@@ -13,7 +13,7 @@ In this lab we will build a small RESTful API with a Helidon microservice. We wi
 * [Introduction to Microservices](#introduction-to-microservices)
 * [Lab guide](#lab-guide)
    * [Setting up repository](#setting-up-repository)
-   * [Wercker CI/CD pipeline](#wercker-ci/cd-pipeline)
+   * [Wercker CI/CD pipelines](#wercker-pipelines-for-continous-integration)
    * [Deploying to Kubernetes cluster](#deploying-to-kubernetes-cluster)
    * [Some more steps](#some-more-steps)
 * [Next steps](#next-steps)
@@ -39,7 +39,7 @@ Here we can write about the technology and why its cool. E.g. what is APEX with 
 
 This is where the tutorial starts with all steps of the lab. Divide the lab into 3-10 chapters. In each chapter describe all steps, including some screenshots.
 
-### Wercker CI/CD pipeline
+### Wercker pipelines for Continous Integration
 
 ....
 
