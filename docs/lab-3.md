@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Lab 3
-nav_order: 8
 ---
 
 # Lab 3

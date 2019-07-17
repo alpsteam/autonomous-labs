@@ -2,7 +2,6 @@
 layout: default
 title: Autonomous Labs
 permalink: /
-nav_order: 1
 ---
 # 🚀 Autonomous Labs
 [Lab 1: Swingbench and ATP](www.example.com) | [Lab 2: Analytics cloud](www.example.com) | [Lab 3: Low Code With APEX and Autonomous DB](www.example.com) | [Lab 4: Microservices and Autonomous DB](www.example.com) | [Lab 5: Some more labs](www.example.com)

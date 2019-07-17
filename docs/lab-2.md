@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Lab 2 Microservices
-nav_order: 6
 ---
 
 # Lab 2 Microservices
