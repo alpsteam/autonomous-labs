@@ -2,11 +2,9 @@
 layout: default
 title: Lab 1 Microservices
 nav_order: 5
-permalink: /lab1
-
 ---
 
-# Lab 1: Microservices
+# Lab 1 Microservices
 
 > First we can provide a very short description with the purpose of the lab, like this: 
 
