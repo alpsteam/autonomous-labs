@@ -1,7 +1,7 @@
-# Autonomous Labs
+# 🚀 Autonomous Labs
 [Lab 1: Swingbench and ATP](www.example.com) | [Lab 2: Analytics cloud](www.example.com) | [Lab 3: Low Code With APEX and Autonomous DB](www.example.com) | [Lab 4: Microservices and Autonomous DB](www.example.com) | [Lab 5: Some more labs](www.example.com)
 
-Autonomous Labs are designed to get started instantly with Oracle Autonomous Database. All labs are hands-on and developers will build a small application to built upon 🚀.
+Autonomous Labs are designed to get started instantly with Oracle Autonomous Database. All labs are hands-on and developers will build a small application to built upon.
 
 # Lab 4: Microservices (Helidon) with Oracle Autonomous DB
 
@@ -31,17 +31,17 @@ Here we can write about prerequisites.
 
 ## Introduction to Microservices
 
-Here we can write about the technology and why its cool. E.g. what is APEX with some links and perhaps 1 or two screenshots.
+Here we can write about the technology and why its cool. E.g. what is APEX with some links and perhaps 1 or two screenshots. 
+
+If you want to include an image, the image should be in a folder `/images` and can be shown like this:
+
+![Oracle DB with Microservices](/images/oracle-db-microservices.png)
 
 # Lab guide
 
 ## Setting up repository
 
 This is where the tutorial starts with all steps of the lab. Divide the lab into 3-10 chapters. In each chapter describe all steps, including some screenshots.
-
-To include an image it can be done like this.
-
-![GitHub Logo](/images/logo.png)
 
 ## Wercker pipelines for Continous Integration
 
