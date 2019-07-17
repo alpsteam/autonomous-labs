@@ -3,7 +3,7 @@ layout: default
 title: Lab 2 Some other title
 ---
 
-# 🚀 Labs 2: Some other title
+# 🚀 Lab 2: Some other title
 
 In this lab we will build a small RESTful API with a Helidon microservice. We will connect the microservice to Oracle Autonomous Transaction Processing DB and deploy our application to Kubernetes using a CI/CD pipeline.
 

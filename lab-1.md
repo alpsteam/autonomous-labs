@@ -3,7 +3,7 @@ layout: default
 title: Lab 1 Template
 ---
 
-# 🚀 Labs 1: Sample lab template
+# 🚀 Lab 1: Sample lab template
 
 Use this as a template to build make your lab guide. If you have any resources like `.csv` files or `.zip` files they can be put in the according lab folder in the repository and downloaded like this.
 
