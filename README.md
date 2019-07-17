@@ -75,7 +75,7 @@ Here we can provide some next steps. We should give ideas what the lab participa
 
 ## Issues
 
-If there are issues with this lab guide or you have feedback please use the [issues section](https://github.com/m1nka/autonomous-labs-template/issues) of this repository.
+If there are issues with this lab guide or you have feedback please tell us in the [issues section](https://github.com/m1nka/autonomous-labs-template/issues) of this repository.
 
 
 
