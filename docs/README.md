@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Autonomous Labs
 permalink: /
 nav_order: 1
 ---
