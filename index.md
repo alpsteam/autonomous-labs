@@ -5,7 +5,13 @@ permalink: /
 ---
 # 🚀 Autonomous Labs for Oracle Cloud
 
+{: .fs-9 }
+
 Autonomous Labs are designed to get started instantly with Oracle Autonomous Database. All labs are hands-on and developers will build a small application to built upon.
+{: .fs-6 .fw-300 }
+
+[Get started now](https://m1nka.github.io/autonomous-labs/lab-1.html){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/m1nka/autonomous-labs){: .btn .fs-5 .mb-4 .mb-md-0 }
+
 
 [Lab 1: Swingbench and ATP](https://m1nka.github.io/autonomous-labs/lab-1.html) Get started with Oracle Autonomous Transaction Processing DB
 
