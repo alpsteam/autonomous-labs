@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Lab 2 Microservices
+title: Lab 2
 ---
 
-# Lab 2 Microservices
+# Lab 2
 
 > First we can provide a very short description with the purpose of the lab, like this: 
 
