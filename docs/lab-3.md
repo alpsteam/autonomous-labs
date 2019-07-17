@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab 3: Labotory no 3
+title: Lab 3 Labotory no 3
 nav_order: 70
 ---
 
