@@ -39,9 +39,25 @@ Here we can write about the technology and why its cool. E.g. what is APEX with 
 
 This is where the tutorial starts with all steps of the lab. Divide the lab into 3-10 chapters. In each chapter describe all steps, including some screenshots.
 
+To include an image it can be done like this.
+
+![GitHub Logo](/images/logo.png)
+
 ## Wercker pipelines for Continous Integration
 
-....
+Should there be a need to highlight code it can be done like this.
+
+```java
+
+public class GreetService {
+  @GET
+  @Path("/greet")
+  public String getMsg() {
+    return "Hello World!";
+  }
+}
+
+```
 
 ## Deploying to Kubernetes cluster
 
