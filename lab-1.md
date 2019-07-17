@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Lab 1 Sample lab
+title: Lab 1 Template
 ---
 
-# 🚀 Labs 1: Sample lab
+# 🚀 Labs 1: Sample lab template
 
-In this lab we will build a small RESTful API with a Helidon microservice. We will connect the microservice to Oracle Autonomous Transaction Processing DB and deploy our application to Kubernetes using a CI/CD pipeline.
+Use this as a template to build make your lab guide.
 
 ## Table of contents
 
 * [Prerequisites](#prerequisites)
-* [Introduction to Microservices](#introduction-to-microservices)
+* [Introduction to your lab](#introduction-to-your-lab)
 * [Lab guide](#lab-guide)
    * [Setting up repository](#setting-up-repository)
    * [Wercker CI/CD pipelines](#wercker-pipelines-for-continous-integration)
@@ -27,7 +27,7 @@ In this lab we will build a small RESTful API with a Helidon microservice. We wi
 - This lab will roughly require 200€ in Universal Cloud Credits
 - etc.
 
-## Introduction to Microservices
+## Introduction to your lab
 
 Here we can write about the technology and why its cool. E.g. describe what is APEX, with some links and perhaps one or two screenshots. Or why are microservices popular and why should you do it with Helidon and Oracle Managed K8s.
 
