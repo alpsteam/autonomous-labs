@@ -60,7 +60,6 @@ $ bundle exec jekyll serve
 
 If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
-
 ## About the project
 
 Just the Docs is &copy; 2017-2019 by [Patrick Marsceill](http://patrickmarsceill.com).
