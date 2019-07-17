@@ -3,11 +3,11 @@
 
 Autonomous Labs are designed to get started instantly with Oracle Autonomous Database. All labs are hands-on and developers will build a small application to built upon 🚀.
 
-## Lab 4: Microservices (Helidon) with Oracle Autonomous DB
+# Lab 4: Microservices (Helidon) with Oracle Autonomous DB
 
 First we can provide a very short description with the purpose of the lab, like this: In this lab we will build a small RESTful API with a Helidon microservice. We will connect the microservice to Oracle Autonomous Transaction Processing and deploy our application to Kubernetes using a CI/CD pipeline.
 
-### Table of contents
+## Table of contents
 
 * [Prerequisites](#prerequisites)
 * [Introduction to Microservices](#introduction-to-microservices)
@@ -20,7 +20,7 @@ First we can provide a very short description with the purpose of the lab, like 
 * [Issues](#issues)
 
 
-### Prerequisites
+## Prerequisites
 
 Here we can write about prerequisites.
 
@@ -29,31 +29,31 @@ Here we can write about prerequisites.
 - This lab will roughly require 200€ in Universal Cloud Credits
 - etc.
 
-### Introduction to Microservices
+## Introduction to Microservices
 
 Here we can write about the technology and why its cool. E.g. what is APEX with some links and perhaps 1 or two screenshots.
 
-## Lab guide
+# Lab guide
 
-### Setting up repository
+## Setting up repository
 
 This is where the tutorial starts with all steps of the lab. Divide the lab into 3-10 chapters. In each chapter describe all steps, including some screenshots.
 
-### Wercker pipelines for Continous Integration
+## Wercker pipelines for Continous Integration
 
 ....
 
-### Deploying to Kubernetes cluster
+## Deploying to Kubernetes cluster
 
 .....
 
-### Some more steps
+## Some more steps
 
 ......
 
 ## Next steps
 
-Here we can provide some next steps. We should give ideas what the lab participant can do next with the service. Oracle has lots of good resources (blogs etc.). 
+Here we can provide some next steps. We should give ideas what the lab participant can do next with the service. Oracle has lots of good resources (blogs etc.) thank we can link. 
 
 ## Issues
 
