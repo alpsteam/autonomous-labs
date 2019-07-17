@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab 1: Microservices (Helidon) with Oracle Autonomous DB
+title: Lab 2: Microservices (Helidon) with Oracle Autonomous DB
 nav_order: 90
 ---
 
