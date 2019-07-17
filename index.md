@@ -7,12 +7,11 @@ permalink: /
 
 Autonomous Labs are designed to get started instantly with Oracle Autonomous Database. All labs are hands-on and developers will build a small application to built upon.
 
-[Lab 1: Swingbench and ATP](www.example.com) | Get started with Oracle Autonomous Transaction Processing DB
-
-[Lab 2: Analytics cloud](www.example.com) | Analyze data with Oracle Analytics Cloud on Oracle Autonomous Data Warehouse
-
-
-[Lab 3: Low Code With APEX and Autonomous DB](www.example.com) | [Lab 4: Microservices and Autonomous DB](www.example.com) | [Lab 5: Some more labs](www.example.com)
+| Lab | Description |
+| --- | --- |
+| [Lab 1: Swingbench and ATP](www.example.com) | Get started with Oracle Autonomous Transaction Processing DB |
+| [Lab 2: Analytics cloud](www.example.com) | Analyze data with Oracle Analytics Cloud on Oracle Autonomous Data Warehouse |
+| [Lab 3: Low Code With APEX on ATP](www.example.com) | Build your first low code application with Oracle APEX |
 
 ## Prerequisites
 
