@@ -7,11 +7,13 @@ permalink: /
 
 Autonomous Labs are designed to get started instantly with Oracle Autonomous Database. All labs are hands-on and developers will build a small application to built upon.
 
-| Lab | Description |
-| --- | --- |
-| [Lab 1: Swingbench and ATP](www.example.com) | Get started with Oracle Autonomous Transaction Processing DB |
-| [Lab 2: Analytics cloud](www.example.com) | Analyze data with Oracle Analytics Cloud on Oracle Autonomous Data Warehouse |
-| [Lab 3: Low Code With APEX on ATP](www.example.com) | Build your first low code application with Oracle APEX |
+[Lab 1: Swingbench and ATP](https://m1nka.github.io/autonomous-labs/lab-1.html) Get started with Oracle Autonomous Transaction Processing DB
+
+[Lab 2: Analytics cloud](https://m1nka.github.io/autonomous-labs/lab-2.html) Analyze data with Oracle Analytics Cloud on Oracle Autonomous Data Warehouse
+
+
+[Lab 3: Low Code With APEX](https://m1nka.github.io/autonomous-labs/lab-1.html) | Build your first low code application with Oracle APEX on Oracle Autonomous Transaction Processing
+
 
 ## Prerequisites
 
@@ -21,3 +23,11 @@ Autonomous Labs are designed to get started instantly with Oracle Autonomous Dat
 - Right permissions
 - This lab will roughly require 200€ in Universal Cloud Credits
 - etc.
+
+## Issues
+
+If there are issues with this lab guide or you have feedback please tell us in the [issues section](https://github.com/m1nka/autonomous-labs-template/issues) of this repository.
+
+
+
+
