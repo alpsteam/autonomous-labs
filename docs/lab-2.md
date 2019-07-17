@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Lab 2: Microservices (Helidon) with Oracle Autonomous DB
-nav_order: 90
+nav_order: 60
 ---
 
-# Lab 4: Microservices (Helidon) with Oracle Autonomous DB
+# Lab 2: Microservices (Helidon) with Oracle Autonomous DB
 
 > First we can provide a very short description with the purpose of the lab, like this: 
 

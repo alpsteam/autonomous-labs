@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Lab 3: Labotory no 3
-nav_order: 90
+nav_order: 70
 ---
 
-# Lab 4: Microservices (Helidon) with Oracle Autonomous DB
+# Labotory no 3
 
 > First we can provide a very short description with the purpose of the lab, like this: 
 
