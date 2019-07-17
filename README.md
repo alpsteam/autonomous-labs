@@ -5,11 +5,13 @@ Autonomous Labs are designed to get started instantly with Oracle Autonomous Dat
 
 # Lab 4: Microservices (Helidon) with Oracle Autonomous DB
 
->> First we can provide a very short description with the purpose of the lab, like this: 
+> First we can provide a very short description with the purpose of the lab, like this: 
 
 In this lab we will build a small RESTful API with a Helidon microservice. We will connect the microservice to Oracle Autonomous Transaction Processing DB and deploy our application to Kubernetes using a CI/CD pipeline.
 
 ## Table of contents
+
+> A table of contents which links to each section, like this: 
 
 * [Prerequisites](#prerequisites)
 * [Introduction to Microservices](#introduction-to-microservices)
@@ -33,7 +35,7 @@ Here we can write about prerequisites.
 
 ## Introduction to Microservices
 
-In this section we do an `Introduction to [any topic]`.
+> In this section we do an `Introduction to [any topic]`.
 
 Here we can write about the technology and why its cool. E.g. describe what is APEX, with some links and perhaps one or two screenshots. Or why are microservices popular and why should you do it with Helidon and Oracle Managed K8s.
 
