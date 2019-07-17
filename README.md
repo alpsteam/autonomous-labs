@@ -31,7 +31,7 @@ Here we can write about prerequisites.
 
 ## Introduction to Microservices
 
-Here we can write about the technology and why its cool. E.g. what is APEX with some links and perhaps 1 or two screenshots. 
+Here we can write about the technology and why its cool. E.g. what is APEX with some links and perhaps 1 or two screenshots. Or why are microservices popular and why should you do it with Helidon and Oracle Managed K8s.
 
 If you want to include an image, the image should be in a folder `/images` and can be shown like this:
 
