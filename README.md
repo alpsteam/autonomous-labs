@@ -26,7 +26,7 @@ In this lab we will build a small RESTful API with a Helidon microservice. We wi
 
 ## Prerequisites
 
-Here we can write about prerequisites.
+> Here we can write about prerequisites.
 
 - An Oracle Cloud Account
 - Right permissions
@@ -35,7 +35,7 @@ Here we can write about prerequisites.
 
 ## Introduction to Microservices
 
-> In this section we do an `Introduction to [any topic]`.
+> In this section we do an `Introduction to [topic]`.
 
 Here we can write about the technology and why its cool. E.g. describe what is APEX, with some links and perhaps one or two screenshots. Or why are microservices popular and why should you do it with Helidon and Oracle Managed K8s.
 
