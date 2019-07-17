@@ -10,8 +10,8 @@ In this lab we will build a small RESTful API with a Helidon microservice. We wi
 ### Table of contents
 
 * [Prerequisites](#prerequisites)
-* [Introduction to Microservices](#intro)
-* [Lab guide](#labguide)
+* [Introduction to Microservices](#introduction-to-microservices)
+* [Lab guide](#lab-guide)
    * [Setting up repository](#stdin)
    * [Wercker CI/CD pipeline](#local-files)
    * [Deploying to Kubernetes cluster](#remote-files)
@@ -42,6 +42,10 @@ Divide the lab into 3-10 chapters. In each chapter describe all steps, including
 ### Wercker CI/CD pipeline
 
 ....
+
+## Issues
+
+If there are issues with this lab guide or you have feedback please use the [issues section](https://github.com/m1nka/autonomous-labs-template/issues) of this repository.
 
 
 
