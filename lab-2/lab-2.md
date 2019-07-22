@@ -116,6 +116,22 @@ public class GreetService {
 
 ```
 
+### Run Docker Image
+In our lab we will need to run docker inside docker, this requires some specific startup flags. Caution: This is a serious security issue if you run it like this outside a safe lab environment. You will need to run docker inside the docker container with sudo.
+
+Mac/Linux:
+
+```
+docker run -ti --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.0
+```
+
+Windows:
+
+```
+docker run -ti --rm --privileged -v //var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.0
+```
+
+
 ### OCI CLI setup
 
 ```
