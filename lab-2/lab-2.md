@@ -12,7 +12,7 @@ In this lab we will build a small RESTful API with a lightweight [Helidon micros
 ## Table of contents
 
 * [Prerequisites](#prerequisites)
-* [Microservices and Oracle DB](#microservices-and-oracle-db)
+* [Microservices and Oracle Database](#microservices-and-oracle-database)
 * [Lab guide](#lab-guide)
    * [Setting up repository](#setting-up-repository)
    * [Wercker CI/CD pipelines](#wercker-pipelines-for-continous-integration)
@@ -27,7 +27,7 @@ In this lab we will build a small RESTful API with a lightweight [Helidon micros
 - An Oracle Cloud Account to provision a cloud database. You can go to [cloud.oracle.com](https://cloud.oracle.com) and get a 300$ free trial.
 - A Kubernetes cluster to deploy the microservice to (e.g. a [managed OKE cluster](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengoverview.htm))
 
-## Microservices and Oracle DB
+## Microservices and Oracle Database
 
 ### Introduction to Microservices
 
@@ -62,18 +62,33 @@ This means that each microservice gets alligned with its own containerized datab
 
 ![Oracle DB with Microservices](images/oracle-db-microservices.png)
 
-With Oracle Autonomous Database as a basis for a data management layer can offer the following advantages:
+A data management layer to support a microservice-based application layer can offer the following advantages:
 
-- No patching overhead, database patches are applied automatically
+- Managebility is simplified
+- It is much easier to secure the system by securing the data management layer
+- Patching is simplified. All database containers can be kept at a similar patch level and patches can be applied in batches
+- Back-up strategies and high availability can be handled at the data management layer
+
+### Oracle Autonomous Database
+
+
+These advantages are amplified when using a managed database cloud service. 
+
+Oracle Autonomous Database Cloud Service is the `ideal data management platform to support a microservice-based architecture` in the cloud for these reasons:
+
+- A database can be provisioned manually or per infrastructure automation (API, Terraform, CLI, etc) in minutes
 - The database is designed to secure itself by default. It is serverless and offers no OS or root access for users.
-- The autonomous database instance scales elastically up to 128 CPU cores, without any downtime
-- Autoscaling can optionally be enabled
-- Support for many data structures: Oracle DB supports relational data, JSON, XML, spatial, graph, RDF,  text, binary, object stores, HDFS, Kafka and NoSQL stores
+- No patching overhead, database patches are applied automatically.
+- The autonomous database instance can scale elastically up/down from 1-128 CPU cores, without any downtime.
+- Autoscaling can optionally be enabled.
+- Back-ups are automatically created and managed
+- Databases can be cloned (and later deleted) very easiliy for testing purposes
+- Managed infrastructe in three data centres (availability domains) per region
+- Support for lots of data structures: Oracle DB supports relational data, JSON, XML, spatial, graph, RDF,  text, binary, object stores, HDFS, Kafka and NoSQL stores
 
+![Oracle DB with Microservices](images/oracle-db-as-data-platform.png)
 
-### What is Oracle Autonomous Database?
-
-Oracle Autonomous Database allows you to (almost) instantly create a database that can be elastically scaled from 1-128 CPUs without any downtime. It is fully managed and patches, tunes (auto-indexing) and secures itself without any manual intervention. Optinally, you can enable Autoscaling which will scale the performance of the database (CPU count) automatically.
+- If there is a need to run analytical queries Oracle Autonomous Database can also run queries across different database containers.
 
 # Lab guide
 
