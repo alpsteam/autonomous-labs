@@ -12,13 +12,10 @@ In this lab we will build a small RESTful API with a lightweight [Helidon micros
 * [Prerequisites](#prerequisites)
 * [Microservices and Oracle Database](#microservices-and-oracle-database)
 * [Lab guide](#lab-guide)
-   * [Setting up repository](#setting-up-repository)
-   * [Bla bla bla](#Blablabla)
-   * [Deploying to Kubernetes cluster](#deploying-to-kubernetes-cluster)
+   * [Access lab resources](#access-lab-resources)
+   * [Blablabla](#blablabla)
    * [Some more steps](#some-more-steps)
 * [Next steps](#next-steps)
-* [Issues](#issues)
-
 
 ## Prerequisites
 
@@ -118,10 +115,6 @@ public class GreetService {
 }
 
 ```
-
-## Deploying to Kubernetes cluster
-
-.....
 
 ## Some more steps
 
