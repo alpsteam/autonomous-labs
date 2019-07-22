@@ -7,7 +7,7 @@ title: Lab 1 Template
 
 Use this as a template to build make your lab guide. If you have any resources like `.csv` files or `.zip` files they can be put in the according lab folder in the repository and downloaded like this.
 
-[Download lab resources](https://m1nka.github.io/autonomous-labs/lab-1/some-zip-file.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
+[Download lab resources](https://alpsteam.github.io/autonomous-labs/lab-1/some-zip-file.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
 
 ## Table of contents
 

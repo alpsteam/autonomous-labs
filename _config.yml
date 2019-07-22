@@ -2,5 +2,5 @@ remote_theme: pmarsceill/just-the-docs
 search_enabled: true
 aux_links:
   "Autonomous Labs on GitHub":
-    - "https://github.com/m1nka/autonomous-labs"
+    - "https://github.com/alpsteam/autonomous-labs"
 # color_scheme: nil
