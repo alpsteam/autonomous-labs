@@ -1,0 +1,66 @@
+#
+# Copyright (c) 2018 Oracle and/or its affiliates. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: priceservice
+  labels:
+    app: priceservice
+    commit: $WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
+spec:
+  type: ClusterIP
+  selector:
+    app: priceservice
+  ports:
+  - port: 8080
+    targetPort: 8080
+    name: http
+---
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: priceservice
+  labels:
+    commit: $WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: priceservice
+        commit: $WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
+        version: v1
+    spec:
+      containers:
+      - name: priceservice
+        image: ${DOCKER_REPO}:$WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - mountPath: /Users/eshneken/OCI/Wallet_ATP
+          name: atp-secret
+          readOnly: true
+      imagePullSecrets:
+      - name: ocir
+      volumes:
+       - name: atp-secret
+         secret:
+           defaultMode: 420
+           secretName: atp-secret
+---
