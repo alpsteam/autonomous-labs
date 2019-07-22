@@ -98,7 +98,7 @@ cd autonomous-labs/lab-2/
 
 or download the lab resources as a `.zip` file.
 
-[Download lab resources](https://alpsteam.github.io/autonomous-labs/lab-2/some-zip-file.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View source code](https://github.com/alpsteam/autonomous-labs/tree/master/lab-2){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Download lab resources](https://github.com/alpsteam/autonomous-labs/raw/master/lab-2/lab-2-resources.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View source code](https://github.com/alpsteam/autonomous-labs/tree/master/lab-2/lab-2-resources){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ## Blablabla
 
