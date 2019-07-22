@@ -148,6 +148,18 @@ Add the public key you get as output from the script as API key in OCI console.
 sh ./src/main/resources/get_wallet.sh [OCID of your Autonomous Database]
 ```
 
+### Build Service
+
+```
+mvn package
+
+cd target && sudo docker build -t priceservice:1.0 .
+```
+
+
+
+
+
 
 ## Some more steps
 
