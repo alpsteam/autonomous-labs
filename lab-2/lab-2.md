@@ -24,6 +24,7 @@ In this lab we will build a small RESTful API with a lightweight [Helidon micros
 
 ## Prerequisites
 
+- Docker runtime locally installed
 - An Oracle Cloud Account to provision a cloud database. You can go to [cloud.oracle.com](https://cloud.oracle.com) and get a 300$ free trial.
 - A Kubernetes cluster to deploy the microservice to (e.g. a [managed OKE cluster](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengoverview.htm))
 
@@ -54,11 +55,11 @@ Such decentralized data management can have considerable downsides and risks:
 
 The process of managing potentially hundreds, or thousands, of individual database instances within Docker containers, can become impractical and costly.
 
-### Taking advantage of a Database-as-a-service layer
+### Using a data persitance layer with microservices
 
-In order to solve these issues we can introduce a data management layer, which will mirror the application microservices.
+In order to solve these issues we can introduce a data persistance layer. For every microservice that requires a persistant database, the data management layer will provide a database for the microservice.
 
-This means that each microservice gets alligned with its own containerized database, that runs in the data management layer.
+This means that each microservice gets alligned with its own containerized database.
 
 ![Oracle DB with Microservices](images/oracle-db-microservices.png)
 
@@ -67,14 +68,13 @@ A data management layer to support a microservice-based application layer can of
 - Managebility is simplified
 - It is much easier to secure the system by securing the data management layer
 - Patching is simplified. All database containers can be kept at a similar patch level and patches can be applied in batches
-- Back-up strategies and high availability can be handled at the data management layer
+- Back-up strategies and high availability can be handled at the persistance layer
 
-### Oracle Autonomous Database
-
+### Oracle Autonomous Database as a data management layer for microservices
 
 These advantages are amplified when using a managed database cloud service. 
 
-Oracle Autonomous Database Cloud Service is the `ideal data management platform to support a microservice-based architecture` in the cloud for these reasons:
+Oracle Autonomous Database Cloud Service is an **ideal data management platform to support a microservice-based architecture** in the cloud for these reasons:
 
 - A database can be provisioned manually or per infrastructure automation (API, Terraform, CLI, etc) in minutes
 - The database is designed to secure itself by default. It is serverless and offers no OS or root access for users.
