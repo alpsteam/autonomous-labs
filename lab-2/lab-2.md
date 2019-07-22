@@ -119,7 +119,7 @@ public class GreetService {
 ### OCI CLI setup
 
 ```
-./src/resources/oci_setup.sh
+sh ./src/main/resources/oci_setup.sh
 
 ```
 
@@ -129,7 +129,7 @@ Add the public key you get as output from the script as API key in OCI console.
 ### Get Autonomous Database Wallet via OCI CLI
 
 ```
-./src/resources/get_wallet.sh [OCID of your Autonomous Database]
+sh ./src/main/resources/get_wallet.sh [OCID of your Autonomous Database]
 ```
 
 
