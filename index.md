@@ -14,11 +14,11 @@ Autonomous Labs are designed to get started instantly with Oracle Autonomous Dat
 
 ## Labs
 
-[Lab 1: Your DB in the Cloud (ATP)](https://alpsteam.github.io/autonomous-labs/lab-1/lab-1.html) Get started with Oracle Autonomous Transaction Processing DB
+[Lab 1: Your DB in the Cloud (ATP)](https://alpsteam.github.io/autonomous-labs/lab-1/lab-1.html) Get started with Oracle Autonomous Database and run a benchmark test with Swingbench. 
 
-[Lab 2: Microservices with Autonomous Database (ATP)](https://alpsteam.github.io/autonomous-labs/lab-2/lab-2.html) Analyze data with Oracle Analytics Cloud on Oracle Autonomous Data Warehouse
+[Lab 2: Microservices with Autonomous Database (ATP)](https://alpsteam.github.io/autonomous-labs/lab-2/lab-2.html) Learn how to deploy a microservice with Autonomous DB as data persistance layer. 
 
-[Lab 3: Your Low-Code App in the Cloud (ATP)](https://alpsteam.github.io/autonomous-labs/lab-3/lab-3.html) Build your first low code application with Oracle APEX on Oracle Autonomous Transaction Processing
+[Lab 3: Your Low-Code App in the Cloud (ATP)](https://alpsteam.github.io/autonomous-labs/lab-3/lab-3.html) Build your first low code application with Oracle APEX on Oracle Autonomous Transaction Processing.
 
 ## Issues
 
