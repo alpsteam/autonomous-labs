@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Autonomous Labs
+title: 🚀 Autonomous Labs
 permalink: /
 ---
 # 🚀 Autonomous Labs for Oracle Cloud
