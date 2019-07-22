@@ -7,15 +7,13 @@ title: Lab 2 Some other title
 
 In this lab we will build a small RESTful API with a lightweight [Helidon microservice](https://helidon.io). We will connect the microservice to [Oracle Autonomous Transaction Processing DB](https://www.oracle.com/database/what-is-autonomous-database.html) and deploy our application to Kubernetes.
 
-[Download lab resources](https://m1nka.github.io/autonomous-labs/lab-2/some-zip-file.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View source code](https://github.com/m1nka/autonomous-labs/tree/master/lab-2){: .btn .fs-5 .mb-4 .mb-md-0 }
-
 ## Table of contents
 
 * [Prerequisites](#prerequisites)
 * [Microservices and Oracle Database](#microservices-and-oracle-database)
 * [Lab guide](#lab-guide)
    * [Setting up repository](#setting-up-repository)
-   * [Wercker CI/CD pipelines](#wercker-pipelines-for-continous-integration)
+   * [Bla bla bla](#Blablabla)
    * [Deploying to Kubernetes cluster](#deploying-to-kubernetes-cluster)
    * [Some more steps](#some-more-steps)
 * [Next steps](#next-steps)
@@ -92,13 +90,20 @@ Oracle Autonomous Database Cloud Service is an **ideal data management platform 
 
 # Lab guide
 
-## Setting up repository
+## Access lab resources
 
-This is where the tutorial starts with all steps of the lab. Divide the lab into 3-10 chapters. In each chapter describe all steps, including some screenshots.
+To access the lab resources you can either clone this repository 
 
-All lab resources, e.g. CSVs, code, etc. should be included in the repository.
+```shell
+git clone git@github.com:m1nka/autonomous-labs.git
+cd autonomous-labs/lab-2/
+```
 
-## Wercker pipelines for Continous Integration
+or download the lab resources as a `.zip` file.
+
+[Download lab resources](https://m1nka.github.io/autonomous-labs/lab-2/some-zip-file.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View source code](https://github.com/m1nka/autonomous-labs/tree/master/lab-2){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+## Blablabla
 
 Should there be a need to highlight code it can be done like this.
 
