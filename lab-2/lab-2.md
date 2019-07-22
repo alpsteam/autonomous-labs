@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab 2: Microservices with Autonomous DB (ATP)
+title: Lab 2\: Microservices with Autonomous DB (ATP)
 ---
 
 # 🚀 Lab 2: Microservices with Autonomous Database (ATP)
