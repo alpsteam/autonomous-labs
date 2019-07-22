@@ -7,7 +7,7 @@ permalink: /
 
 {: .fs-4 }
 
-Autonomous Labs are designed to get started instantly with Oracle Autonomous Database. All labs are hands-on and students will create a small application to built upon.
+Autonomous Labs are designed to get started instantly with Oracle Autonomous Database. All labs are hands-on and students will create a small application to build upon.
 {: .fs-6 .fw-300 }
 
 [Get started now](https://m1nka.github.io/autonomous-labs/lab-1/lab-1.html){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/m1nka/autonomous-labs){: .btn .fs-5 .mb-4 .mb-md-0 }
