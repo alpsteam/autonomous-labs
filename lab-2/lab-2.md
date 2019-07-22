@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Lab 2 Microservices with Autonomous DB
+title: Lab 2: Microservices with Autonomous DB (ATP)
 ---
 
-# 🚀 Lab 2: Microservices with Oracle Database in the cloud
+# 🚀 Lab 2: Microservices with Autonomous Database (ATP)
 
 In this lab we will build a small RESTful API with a lightweight [Helidon microservice](https://helidon.io). We will connect the microservice to [Oracle Autonomous Transaction Processing DB](https://www.oracle.com/database/what-is-autonomous-database.html) and deploy our application to Kubernetes.
 
