@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Lab 1 Template
+title: Lab 1 Your DB in the cloud (ATP)
 ---
 
-# 🚀 Lab 1: Sample lab template
+# 🚀 Lab 1: Your DB in the cloud (ATP)
 
 Use this as a template to build make your lab guide. If you have any resources like `.csv` files or `.zip` files they can be put in the according lab folder in the repository and downloaded like this.
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab 2 Some other title
+title: Lab 2 Microservices with Autonomous DB
 ---
 
 # 🚀 Lab 2: Microservices with Oracle Database in the cloud
