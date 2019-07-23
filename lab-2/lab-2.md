@@ -108,13 +108,17 @@ For our lab make sure to name your database "atp"!
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=a38S_NY8WNk
 " target="_blank"><img src="http://img.youtube.com/vi/a38S_NY8WNk/0.jpg" 
- width="400" border="10" /></a>
+ border="10" /></a>
 
 ### Create Schema and add Test Data
 
 Open Service Console for Autonomous Database in OCI Console, go to "Development" and then open "SQL Developer Web", login with the admin user you setup just before.
 
 Paste the SQL script [load_sql_table.sql](https://github.com/alpsteam/autonomous-labs/blob/master/lab-2/lab-2-resources/src/main/resources/load_sql_table.sql) into the SQL Developer Web console. Paste the content of [product-catalog.json](https://github.com/alpsteam/autonomous-labs/blob/master/lab-2/lab-2-resources/src/main/resources/product-catalog.json) when prompted.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=SnukS-89csE" target="_blank"><img src="http://img.youtube.com/vi/SnukS-89csE/0.jpg" 
+ border="10" /></a>
+
 
 ## Step-by-Step Guide
 
