@@ -100,21 +100,17 @@ or download the lab resources as a `.zip` file.
 
 [Download lab resources](https://github.com/alpsteam/autonomous-labs/raw/master/lab-2/lab-2-resources.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View source code](https://github.com/alpsteam/autonomous-labs/tree/master/lab-2/lab-2-resources){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-## Blablabla
+## Setup of Autonomous Database
 
-Should there be a need to highlight code it can be done like this.
+## Create Database in OCI Console
 
-```java
+For our lab make sure to name your database "atp"!
 
-public class GreetService {
-  @GET
-  @Path("/greet")
-  public String getMsg() {
-    return "Hello World!";
-  }
-}
+## Create Schema and add Test Data
 
-```
+Open Service Console for Autonomous Database in OCI Console, go to "Development" and then open "SQL Developer Web", login with the admin user you setup just before.
+
+Paste the SQL script [load_sql_table.sql](https://github.com/alpsteam/autonomous-labs/blob/master/lab-2/lab-2-resources/src/main/resources/load_sql_table.sql) into the SQL Developer Web console. Paste the content of [product-catalog.json](https://github.com/alpsteam/autonomous-labs/blob/master/lab-2/lab-2-resources/src/main/resources/product-catalog.json) when prompted.
 
 ## Step-by-Step Guide
 
