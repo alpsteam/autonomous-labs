@@ -102,11 +102,11 @@ or download the lab resources as a `.zip` file.
 
 ## Setup of Autonomous Database
 
-## Create Database in OCI Console
+### Create Database in OCI Console
 
 For our lab make sure to name your database "atp"!
 
-## Create Schema and add Test Data
+### Create Schema and add Test Data
 
 Open Service Console for Autonomous Database in OCI Console, go to "Development" and then open "SQL Developer Web", login with the admin user you setup just before.
 
