@@ -116,6 +116,8 @@ public class GreetService {
 
 ```
 
+## Step-by-Step Guide
+
 ### Run Docker Image
 In our lab we will need to run docker inside docker, this requires some specific startup flags. Caution: This is a serious security issue if you run it like this outside a safe lab environment. You will need to run docker inside the docker container with sudo.
 
