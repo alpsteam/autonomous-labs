@@ -116,6 +116,8 @@ public class GreetService {
 
 ```
 
+## Step-by-Step Guide
+
 ### Run Docker Image
 In our lab we will need to run docker inside docker, this requires some specific startup flags. Caution: This is a serious security issue if you run it like this outside a safe lab environment. You will need to run docker inside the docker container with sudo.
 
@@ -156,8 +158,15 @@ mvn package
 cd target && sudo docker build -t priceservice:1.0 .
 ```
 
+### Test Service locally
 
+```
+java -jar target/priceservice.jar 
 
+curl -X GET http://localhost:8080/price
+
+curl -X GET http://localhost:8080/price/1001
+```
 
 
 
