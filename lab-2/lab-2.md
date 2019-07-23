@@ -108,7 +108,7 @@ For our lab make sure to name your database "atp"!
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=a38S_NY8WNk
 " target="_blank"><img src="http://img.youtube.com/vi/a38S_NY8WNk/0.jpg" 
- width="240" height="180" border="10" /></a>
+ width="400" border="10" /></a>
 
 ### Create Schema and add Test Data
 
