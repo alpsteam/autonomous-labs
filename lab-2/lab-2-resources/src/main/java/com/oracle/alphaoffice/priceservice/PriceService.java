@@ -68,7 +68,7 @@ public class PriceService implements Service {
     private static boolean UseDB = true;
     private final static String ATP_CONNECT_NAME = "atp_medium";
     private final static String ATP_PASSWORD_FILENAME = "atp_password.txt";
-    private final static String WALLET_LOCATION = "/Users/eshneken/OCI/Wallet_ATP";
+    private final static String WALLET_LOCATION = "/home/lab/autonomous-labs/lab-2/lab-2-resources/src/main/resources";
     private final static String DB_URL = "jdbc:oracle:thin:@" + ATP_CONNECT_NAME + "?TNS_ADMIN=" + WALLET_LOCATION;
     private final static String DB_USER = "admin";
     private static String DB_PASSWORD;
