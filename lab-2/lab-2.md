@@ -123,21 +123,21 @@ In our lab we will need to run docker inside docker, this requires some specific
 
 Mac/Linux:
 
-```
+```shell
 docker run -ti --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.0
 ```
 
 Windows:
 
-```
+```shell
 docker run -ti --rm --privileged -v //var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.0
 ```
 
 
 ### OCI CLI setup
 
-```
-sh ./src/main/resources/oci_setup.sh
+```shell
+./src/main/resources/oci_setup.sh
 
 ```
 
@@ -146,28 +146,32 @@ Add the public key you get as output from the script as API key in OCI console.
 
 ### Get Autonomous Database Wallet via OCI CLI
 
-```
-sh ./src/main/resources/get_wallet.sh [OCID of your Autonomous Database]
+```shell
+./src/main/resources/get_wallet.sh [OCID of your Autonomous Database]
 ```
 
 ### Build Service
 
-```
+```shell
 mvn package
-
-cd target && sudo docker build -t priceservice:1.0 .
 ```
 
 ### Test Service locally
 
 ```
-java -jar target/priceservice.jar 
+java -jar target/priceservice.jar &
 
 curl -X GET http://localhost:8080/price
 
 curl -X GET http://localhost:8080/price/1001
 ```
 
+### Prepare deployment with Docker & Kubernetes
+
+
+```shell
+cd target && sudo docker build -t priceservice:1.0 .
+```
 
 
 ## Some more steps
