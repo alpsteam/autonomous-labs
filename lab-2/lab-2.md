@@ -156,8 +156,15 @@ mvn package
 cd target && sudo docker build -t priceservice:1.0 .
 ```
 
+### Test Service locally
 
+```
+java -jar target/priceservice.jar 
 
+curl -X GET http://localhost:8080/price
+
+curl -X GET http://localhost:8080/price/1001
+```
 
 
 
