@@ -53,7 +53,7 @@ spec:
         ports:
         - containerPort: 8080
         volumeMounts:
-        - mountPath: /Users/eshneken/OCI/Wallet_ATP
+        - mountPath: /home/lab/autonomous-labs/lab-2/lab-2-resources/src/main/resources 
           name: atp-secret
           readOnly: true
       imagePullSecrets:
