@@ -13,8 +13,8 @@ In this lab we will build a small RESTful API with a lightweight [Helidon micros
 * [Microservices and Oracle Database](#microservices-and-oracle-database)
 * [Lab guide](#lab-guide)
    * [Access lab resources](#access-lab-resources)
-   * [Blablabla](#blablabla)
-   * [Some more steps](#some-more-steps)
+   * [Setup of Autonomous Database]
+   * [Step-by-Step Guide
 * [Next steps](#next-steps)
 
 ## Prerequisites
