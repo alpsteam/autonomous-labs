@@ -13,8 +13,9 @@ In this lab we will build a small RESTful API with a lightweight [Helidon micros
 * [Microservices and Oracle Database](#microservices-and-oracle-database)
 * [Lab guide](#lab-guide)
    * [Access lab resources](#access-lab-resources)
-   * [Blablabla](#blablabla)
-   * [Some more steps](#some-more-steps)
+   * [Setup of Autonomous Database](#setup-of-autonomous-database)
+   * [Step-by-Step Guide](#step-by-step-guide)
+   * [Deploy to Kubernetes](#deploy-to-kubernetes)
 * [Next steps](#next-steps)
 
 ## Prerequisites
@@ -120,7 +121,7 @@ Paste the SQL script [load_sql_table.sql](https://github.com/alpsteam/autonomous
  border="10" /></a>
 
 
-## Step-by-Step Guide
+## Step by Step Guide
 
 ### Run Docker Image
 In our lab we will need to run docker inside docker, this requires some specific startup flags. Caution: This is a serious security issue if you run it like this outside a safe lab environment. You will need to run docker inside the docker container with sudo.
@@ -142,7 +143,6 @@ docker run -ti --rm --privileged -v //var/run/docker.sock:/var/run/docker.sock m
 
 ```shell
 ./src/main/resources/oci_setup.sh
-
 ```
 
 Add the public key you get as output from the script as API key in OCI console.
@@ -178,12 +178,23 @@ cd target && sudo docker build -t priceservice:1.0 .
 ```
 
 
-## Some more steps
+## Deploy to Kubernetes
 
-......
+```
+kubectl create namespace lab
+kubectl create secret generic db-user-pass --from-file=./wallet.zip --namespace=lab
+kubectl apply -f kuberentes.yml --namespace=lab
+```
+
+Once the application is deployed you can create a proxy to access the API. Check the name of the deployed service with `kubectl get services` and then forward the ports.
+
+```
+kubectl port-forward priceservice-b9bb6d6d5-2dfsn 8080:8080 --namespace=lab
+```
+The API will be available at `http://localhost:8080/price`.
 
 ## Next steps
 
-Here we can provide some next steps. We should give ideas what the lab participant can do next with the service. Oracle has lots of good resources (blogs etc.) thank we can link. 
+This lab can easily be extended by deploying everything with a CI/CD pipeline. We've already set up the corresponding `wercker.yml` file.
 
 
