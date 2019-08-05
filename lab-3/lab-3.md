@@ -24,7 +24,7 @@ Build your first low code application with Oracle APEX on Oracle Autonomous Tran
 
 ## Introduction to your lab
 
-In this lab we will build APEX Application.
+In this lab we will build a simple APEX Application.
 
 # Lab guide
 
@@ -36,15 +36,15 @@ The only resource that you will need for this lab (except an Oracle Cloud Accoun
 
 ## Step by Step Guide
 
-Head to the [Oracle Cloud login page](https://cloud.oracle.com/en_US/sign-in) and login.
+Head to the [Oracle Cloud login page](https://cloud.oracle.com/en_US/sign-in) and enter your tenancy name.
 
 ![Image1](images/image1.png)
 
-From the hamburger menu in the top left, choose `Autonomous Transaction Processing`.
+Enter your login credentials for your tenancy.
 
 ![Image2](images/image2.png)
 
-Choose Autonomous Transaction Databases and create a database.
+From the hamburger menu in the top left, choose `Autonomous Transaction Processing`. The, create a database.
 
 ![Image3](images/image3.png)
 
