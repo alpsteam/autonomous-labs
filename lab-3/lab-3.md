@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Lab 3 Autonomous LAB, APEX Hands-On
+title: Lab 3 APEX on Autonomous DB (ATP)
 ---
 
-# 🚀 Lab 3: Autonomous LAB, APEX Hands-On
+# 🚀 Lab 3: APEX on Autonomous DB (ATP)
 
 Build your first low code application with Oracle APEX on Oracle Autonomous Transaction Processing.
 
