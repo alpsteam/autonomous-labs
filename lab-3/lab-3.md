@@ -114,11 +114,11 @@ Choose App Builder and continue
 
 ![Image17](images/image17.png)
 
-Choose “Create” and you see this:
+Choose `Create` and you see this:
 
 ![Image18](images/image18.png)
 
-We will share a file via slack during the run of this session with you, download that file to your laptop location of your choice. It’s a small xls/csv file called sports2019.csv
+We will share a file via slack during the run of this session with you, download that file to your laptop location of your choice. It`s a small xls/csv file called sports2019.csv
 
 ![Image19](images/image19.png)
 
@@ -126,35 +126,35 @@ Open the file
 
 ![Image20](images/image20.jpg)
 
-Choose “Configure” to customize the data load
+Choose `Configure` to customize the data load
 
 ![Image21](images/image21.jpg)
 
-Remove COLUMN_, COL07 & COL08 from the list of columns to load and “SAVE changes”
+Remove COLUMN_, COL07 & COL08 from the list of columns to load and `SAVE changes`
 
 ![Image22](images/image22.jpg)
 
-Enter Table Owner (it’s the user you created), enter Table Name SPORTS_EVENTS, leave Error Table Name empty and choose “Load Data”
+Enter Table Owner (it's the user you created), enter Table Name SPORTS_EVENTS, leave Error Table Name empty and choose `Load Data`
 
 ![Image23](images/image23.jpg)
 
-You get a confirmation then choose “Continue to Create Application Wizard”
+You get a confirmation then choose `Continue to Create Application Wizard`
 
 ![Image24](images/image24.jpg)
 
-Enter “Sports Events 2019” as Name and choose “Create Application”
+Enter `Sports Events 2019` as Name and choose `Create Application`
 
 ![Image25](images/image25.jpg)
 
-Application gets created, choose “Run Application”
+Application gets created, choose `Run Application`
 
 ![Image26](images/image26.jpg)
 
-Provide Username and Password to start the application (it’s the user you created)
+Provide Username and Password to start the application (it's the user you created)
 
 ![Image27](images/image27.jpg)
 
-All created automatically. Keep layout in mind for later. Choose “Events”
+All created automatically. Keep layout in mind for later. Choose `Events`
 
 ![Image28](images/image28.jpg)
 
@@ -166,51 +166,51 @@ After applying the change you will see it in the events list
 
 ![Image30](images/image30.jpg)
 
-Choose “Dashbord” to see a chart. Chart was created automatically based on the data loaded
+Choose `Dashbord` to see a chart. Chart was created automatically based on the data loaded
 
 ![Image31](images/image31.jpg)
 
-We create a new page in the application to see the Sports Events in a calendar. Choose “Create Page”
+We create a new page in the application to see the Sports Events in a calendar. Choose `Create Page`
 
 ![Image32](images/image32.jpg)
 
-From the Components list choose “Calendar” then “Next”
+From the Components list choose `Calendar` then `Next`
 
 ![Image33](images/image33.jpg)
 
-Enter Page Name “Calendar” then choose “Next”
+Enter Page Name `Calendar` then choose `Next`
 
 ![Image34](images/image34.jpg)
 
-Choose “Create a new navigation menu entry” then “Next”
+Choose `Create a new navigation menu entry` then `Next`
 
 ![Image35](images/image35.jpg)
 
-Enter Table / View Owner (it’s the user you created) and Table / View Name “SPORTS_EVENTS (table)” then “Next”
+Enter Table / View Owner (it's the user you created) and Table / View Name `SPORTS_EVENTS (table)` then `Next`
 
 ![Image36](images/image36.jpg)
 
-Enter Display Column “SPORT”, Start Date Column “START_DATE”, End Date Column “END_DATE” then choose “Create”
+Enter Display Column `SPORT`, Start Date Column `START_DATE`, End Date Column `END_DATE` then choose `Create`
 
 ![Image37](images/image37.jpg)
 
-Choose “Save and Run” in the top right corner to test the new page
+Choose `Save and Run` in the top right corner to test the new page
 
 ![Image38](images/image38.jpg)
 
-Et voilà – calendar page with a navigation menu entry on the left. On mouse-over of an event you see some details but we like to see and edit all details. For that return to Page Designer
+Et voilÃ¡, calendar page with a navigation menu entry on the left. On mouse-over of an event you see some details but we like to see and edit all details. For that return to Page Designer
 
 ![Image39](images/image39.jpg)
 
-In the Navigator pane (left) choose “Attributes” under Region – Content Body – Calendar. In the Attributes pane (right) choose “View / Edit Link”
+In the Navigator pane (left) choose `Attributes` under Region ` Content Body ` Calendar. In the Attributes pane (right) choose `View / Edit Link`
 
 ![Image40](images/image40.jpg)
 
-In Page enter “3” (Event), for Set Items enter Name “P3_ID” and Value “ID” then choose “Ok”
+In Page enter `3` (Event), for Set Items enter Name `P3_ID` and Value `ID` then choose `Ok`
 
 ![Image41](images/image41.jpg)
 
-“Save and Run” the page
+`Save and Run` the page
 
 ![Image42](images/image42.jpg)
 
@@ -218,37 +218,37 @@ If you choose an event you are now able to edit the details of the event.
 
 ![Image43](images/image43.jpg)
 
-We add a Pie-Chart to the Dashboard Page. In the Navigator pane choose “Sport” under Region – Content Body, from hamburger menu choose “Duplicate”
+We add a Pie-Chart to the Dashboard Page. In the Navigator pane choose `Sport` under Region `Content Body`, from hamburger menu choose `Duplicate`
 
 ![Image44](images/image44.jpg)
 
-In the Navigator page choose “Attributes” under Region – Content Body – Sport (2nd), in the Attributes pane enter Chart Type “Pie”
+In the Navigator page choose `Attributes` under Region ` Content Body ` Sport (2nd), in the Attributes pane enter Chart Type `Pie`
 
 ![Image45](images/image45.jpg)
 
-In the Navigator page choose “Series 1” under Region – Content Body – Sport (2nd) – Series, in the Attributes pane enter Label Show “Yes” and Display As “Label – Percentage (Value)”
+In the Navigator page choose `Series 1` under Region ` Content Body ` `Sport (2nd) ` Series, in the Attributes pane enter Label Show `Yes` and Display As `Label ` Percentage (Value)`
 
 ![Image46](images/image46.jpg)
 
-“Save and Run” the page, the Dashboard page contains 2 Charts.
+`Save and Run` the page, the Dashboard page contains 2 Charts.
 Now remember the content of the homepage, it contains an Event and Dashboard item. 
 
 
 ![Image47](images/image47.jpg)
 
-Navigate to the Page Designer of the page Home. In the Navigator pane choose tab “Page Shared Components” (right)
+Navigate to the Page Designer of the page Home. In the Navigator pane choose tab `Page Shared Components` (right)
 
 ![Image48](images/image48.jpg)
 
-In the Navigator pane choose “Page Navigation” under Lists. In the Lists pane (right)  choose “Edit Component”
+In the Navigator pane choose `Page Navigation` under Lists. In the Lists pane (right)  choose `Edit Component`
 
 ![Image49](images/image49.jpg)
 
-Choose “Create Entry”
+Choose `Create Entry`
 
 ![Image50](images/image50.jpg)
 
-Enter Page “5” (Calendar) and List Entry Label “Calendar”, choose an Image/Class of your choice. Choose “Create List Entry”
+Enter Page `5` (Calendar) and List Entry Label `Calendar`, choose an Image/Class of your choice. Choose `Create List Entry`
 
 ![Image51](images/image51.png)
 
