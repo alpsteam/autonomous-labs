@@ -7,25 +7,25 @@ title: Lab 4: Using Oracle in Database Machine Learning
 
 ## Table of contents
 
-* [Prerequisites](#prerequisites)
-* [Introduction to your lab](#introduction-to-your-lab)
-* [Lab guide](#lab-guide)
-   * [Setting up repository](#setting-up-repository)
-   * [Wercker CI/CD pipelines](#wercker-pipelines-for-continous-integration)
-   * [Deploying to Kubernetes cluster](#deploying-to-kubernetes-cluster)
-   * [Some more steps](#some-more-steps)
-* [Next steps](#next-steps)
-* [Issues](#issues)
+1. [Prerequisites](#prerequisites)
+2. [Introduction to your lab](#introduction-to-your-lab)
+3. [Lab guide](#lab-guide)
+   1. [Importing data into Oracle Cloud Infrastructure Object Storage](#import-oci)
+   2. [Setting up Autonomous Data Warehouse](#setup-adw)
+   3. [Importing data into Autonomous Data Warehouse](#import-adw)
+   4. [Setup Oracle Machine Learning](#setup-oml)
+4. [Introduction into k-means algorithm](#Introduction-k-means)
+4. [Next steps](#next-steps)
+5. [Known issues](#issues)
 
 
-## Prerequisites
+# 1. Prerequisites
 
 - An Oracle Cloud Account
 - Right permissions
-- This lab will roughly require 200€ in Universal Cloud Credits
-- etc.
+- Access to Oracle Cloud Console.
 
-## Introduction to your lab
+# 2. Introduction to your lab
 
 The goal of this lab is to show the user how to setup a data science project using managed services provided
 in the Oracle Cloud. We will use [Oracle Autonomous Data Warehouse (ADW)](https://cloud.oracle.com/en_US/datawarehouse) to store our data and run the machine learning
@@ -41,9 +41,9 @@ If you want to include an image, the image should be in a folder `/images` and c
 
 ![Architecture Overview](/Images/architecture_cut.jpg)
 
-# Lab guide
+# 3. Lab guide
 
-## Importing data into Oracle Cloud Infrastructure Object Storage
+## <a name="import-oci"></a>Importing data into Oracle Cloud Infrastructure Object Storage
 
 Oracle Cloud Object Storage will be used as staging area to hold our data before we import it into ADW.
 Oracle Cloud Object Storage is a highly scalable service which can be used to store structured and unstructered data.
@@ -86,9 +86,9 @@ At the end of this step make sure you noted down the following three values. We 
 | Auth Token    | gq[Jd4>tppwK}U>kBepg                        |
 | File URL      | https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/orasealps/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv     |
 
-## Setting up Autonomous Data Warehouse
+## <a name="setup-adw"></a>Setting up Autonomous Data Warehouse
 
-## Importing data into Autonomous Data Warehouse
+## <a name="import-adw"></a>Importing data into Autonomous Data Warehouse
 
 Now that ADW has been setup and the data has been uploaded to Oracle Cloud Object Storage, the data can be
 imported into ADW. To import data we will be using SQL Developer Web. SQL Developer Web can be accessed from the
@@ -134,12 +134,13 @@ https://js7elhijapblzqx-autonlab.adb.eu-frankfurt-1.oraclecloudapps.com/ords/lab
 Use the new URL to access SQL Developer Web as analyst user, using "analyst" as username and the password you set via the SQL statement
 for me this is 'Pw4lab42019'.
 
-Now we can create a table which we will later populate with the data from the CSV file. Make sure you are loggoe in as
-'analyst' user in SQL developer web and run the following SQL statement.
+Now we can create a table which we will later populate with the data from the CSV file. Make sure you are logged in as
+'analyst' user in SQL developer web and run the following SQL statement. NOTE: if you change the table here you will
+to have change it as well in the following SQL and the Zeppelin notebooks you will import later on.
 
 ```sql
 
-CREATE TABLE LABLOAD
+CREATE TABLE OAC_TRANSACTIONS
    (TransactionID number(10) NOT NULL,
 	CustomerID number(10) NOT NULL,
 	CustomerName VARCHAR(50),
@@ -180,7 +181,7 @@ No we can import the data by running the following SQL.
 ```sql
 BEGIN
  DBMS_CLOUD.COPY_DATA(
-    table_name =>'LABLOAD',
+    table_name =>'OAC_TRANSACTIONS',
     credential_name =>'analystobjstorage',
     file_uri_list =>'https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/orasealps/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv',
     format => json_object('delimiter' value ',')
@@ -190,21 +191,18 @@ END;
 
 Congrats! Now we imported all the data to ADW and it is ready to be explored using Oracle machine learning.
 
-## Setup Oracle Machine Learning
+## <a name="setup-oml">Setup Oracle Machine Learning
 
 As first step we need to enable the 'analyst' user which we setup earlier in ADW for access to Oracle Machine Learning.
 See the steps in the following video.
 
 [![Setup OML](http://img.youtube.com/vi/TDJ7DYs2k3s/0.jpg)](http://www.youtube.com/watch?v=TDJ7DYs2k3s "Setup OML")
 
+# <a name="Introduction-k-means"> 4. Introduction into k-means algorithm
 
-
-.....
-
-## Some more steps
 
 ......
 
-## Next steps
+# Next steps
 
 Here we can provide some next steps. We should give ideas what the lab participant can do next with the service. Oracle has lots of good resources (blogs etc.) thank we can link. 
