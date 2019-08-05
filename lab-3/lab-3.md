@@ -5,8 +5,7 @@ title: Lab 3 Autonomous LAB, APEX Hands-On
 
 # Lab 3: Autonomous LAB, APEX Hands-On
 
-In this lab we will build a APEX Application. 
-[Download lab resources](https://alpsteam.github.io/autonomous-labs/lab-3/some-zip-file.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
+Build your first low code application with Oracle APEX on Oracle Autonomous Transaction Processing.
 
 ## Table of contents
 
@@ -31,16 +30,9 @@ In this lab we will build APEX Application.
 
 ## Access lab resources
 
-To access the lab resources you can either clone this repository 
+The only resource that you will need for this lab (except an Oracle Cloud Account) is the [sports2019.csv](https://github.com/alpsteam/autonomous-labs/blob/master/lab-3/sports2019.csv) file. You can download the file as a `.zip` below.
 
-```shell
-git clone git@github.com:alpsteam/autonomous-labs.git
-cd autonomous-labs/lab-3/
-```
-
-or download the lab resources as a `.zip` file.
-
-[Download lab resources](https://github.com/alpsteam/autonomous-labs/raw/master/lab-3/some-zip-file.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
+[Download .zip file](https://github.com/alpsteam/autonomous-labs/raw/master/lab-3/lab-3-resources.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } 
 
 ## Step by Step Guide
 
