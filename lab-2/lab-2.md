@@ -70,7 +70,7 @@ A data management layer to support a microservice-based application layer can of
 
 These advantages are amplified when using a managed database cloud service. 
 
-Oracle Autonomous Database Cloud Service is an **ideal data management platform to support a microservice-based architecture** in the cloud for these reasons:
+Oracle Autonomous Database Cloud Service is an ideal data management platform to support a microservice-based architecture in the cloud for these reasons:
 
 - A database can be provisioned manually or per infrastructure automation (API, Terraform, CLI, etc) in minutes
 - The database is designed to secure itself by default. It is serverless and offers no OS or root access for users.
@@ -109,8 +109,8 @@ Login to your Oracle Cloud Account and head to `Autonomous Transaction Processin
 
 Create an ATP instance, for our lab make sure to **name your database `atp`** exactly! Click the video thumbnail below for detailed instructions.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=a38S_NY8WNk
-" target="_blank"><img src="http://img.youtube.com/vi/a38S_NY8WNk/0.jpg" 
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=a38S_NY8WNk
+" target="_blank"><img src="https://img.youtube.com/vi/a38S_NY8WNk/0.jpg" 
  border="10" /></a>
 
 ### Create Schema and add Test Data
@@ -119,7 +119,7 @@ Open Service Console for Autonomous Database in OCI Console, go to "Development"
 
 Paste the SQL script [load_sql_table.sql](https://github.com/alpsteam/autonomous-labs/blob/master/lab-2/lab-2-resources/src/main/resources/load_sql_table.sql) into the SQL Developer Web console. Paste the content of [product-catalog.json](https://github.com/alpsteam/autonomous-labs/blob/master/lab-2/lab-2-resources/src/main/resources/product-catalog.json) when prompted.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=SnukS-89csE" target="_blank"><img src="http://img.youtube.com/vi/SnukS-89csE/0.jpg" 
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=SnukS-89csE" target="_blank"><img src="https://img.youtube.com/vi/SnukS-89csE/0.jpg" 
  border="10" /></a>
 
 
@@ -143,9 +143,11 @@ Windows:
 docker run -ti --rm --privileged -v //var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.1
 ```
 
+While the Docker container is downloading you can already continue with [https://alpsteam.github.io/autonomous-labs/lab-2/lab-2.html#oci-cli-setup](OCI CLI Setup) and come back later.
+
 ### Get the code 
 
-Run a `git clone` inside of the Docker container to get the lab resources and change directory.
+After the Docker container has been started, run a `git clone` inside of the Docker container to get the lab resources and change directory.
 
 ```
 git clone https://github.com/alpsteam/autonomous-labs.git
@@ -154,7 +156,7 @@ cd autonomous-labs/lab-2/lab-2-resources/
 
 ### OCI CLI setup
 
-We are going to use the OCI CLI to interact with Oracle Cloud. The CLI is already installed within the Docker container, but in order to link the CLI with your account the `oci_cli_setup.sh` script needs to be run. Every resource in Oracle Cloud has an `OCID` and we need to find the user OCID as well as the tenancy OCID to continue.
+We are going to use the OCI CLI to interact with Oracle Cloud. The CLI is already installed within the Docker container, but in order to link the CLI with your account the `oci_cli_setup.sh` script needs to be run. Every resource in Oracle Cloud has an `OCID` and we need to find the `user OCID` as well as the `tenancy OCID` to continue.
 
 Copy and save your `user OCID` by navigating to your profile.
 
@@ -169,7 +171,7 @@ Then run
 chmod u+x src/main/resources/oci_cli_setup.sh
 ./src/main/resources/oci_cli_setup.sh
 ```
-and enter all the necessary OCIDs. Hit `Enter` a couple of time to generate a new keypair without password. Add the public key you get as output from the script as API key in OCI console.
+and hit `Enter` to choose the standard location for the OCI CLI config. Afterwards enter all the necessary OCIDs. You can choose `eu-frankfurt-1` as region. Then, hit `Enter` a couple of time to generate a new keypair in the standard location without password. Add the public key you get as output from the script as API key in OCI console.
 
 Copy the public key.
 
@@ -183,11 +185,11 @@ That's it, you have now configured the OCI CLI to work with your account.
 
 ### Get Autonomous Database Wallet via OCI CLI
 
-Next we will use the OCI CLI to download the Autonomous DB wallet (which contains all credentials and connection string to connect to the database). Therefor, we the the `Autonomous Database OCID`.
+Next, we will use the OCI CLI to download the Autonomous DB wallet (which contains all credentials and connection strings to connect to the database). Therefor, we need the `Autonomous Database OCID`.
 
 ![Find ATP OCID](images/find-atp-ocid.png)
 
-Next execute the `get_wallet.sh` script and enter the `Autonomous Database OCID` and the database password that you previously chose.
+Execute the `get_wallet.sh` script and enter the `Autonomous Database OCID` and the database password that you previously chose.
 
 ```shell
 chmod u+x src/main/resources/get_wallet.sh
@@ -196,18 +198,22 @@ chmod u+x src/main/resources/get_wallet.sh
 
 ### Build Service
 
+Next, we will build the Java app. Add the local resources:
+
 ```shell
-# add local resources
-RUN mvn install:install-file -Dfile=src/main/libs/ojdbc10.jar -DgroupId=com.oracle.jdbc -DartifactId=ojdbc10 -Dversion=19.3.0 -Dpackaging=jar && \
+mvn install:install-file -Dfile=src/main/libs/ojdbc10.jar -DgroupId=com.oracle.jdbc -DartifactId=ojdbc10 -Dversion=19.3.0 -Dpackaging=jar && \
 mvn install:install-file -Dfile=src/main/libs/ucp.jar -DgroupId=com.oracle.jdbc -DartifactId=ucp -Dversion=19.3.0 -Dpackaging=jar && \
 mvn install:install-file -Dfile=src/main/libs/osdt_core.jar -DgroupId=com.oracle.jdbc -DartifactId=osdt_core -Dversion=19.3.0 -Dpackaging=jar && \
 mvn install:install-file -Dfile=src/main/libs/osdt_cert.jar -DgroupId=com.oracle.jdbc -DartifactId=osdt_cert -Dversion=19.3.0 -Dpackaging=jar && \
 mvn install:install-file -Dfile=src/main/libs/oraclepki.jar -DgroupId=com.oracle.jdbc -DartifactId=oraclepki -Dversion=19.3.0 -Dpackaging=jar 
-
+```
+and build the app (some tests will be performed too).
+```
 mvn package
 ```
 
 ### Test Service locally
+
 
 ```
 java -jar target/priceservice.jar &
@@ -224,6 +230,7 @@ curl -X GET http://localhost:8080/price/1001
 cd target && sudo docker build -t priceservice:1.0 .
 ```
 
+Done! You have now built a small Helidon microservice which is connected to an Autonomous Database instance.
 
 ## Deploy to Kubernetes
 
