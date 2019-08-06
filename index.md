@@ -20,6 +20,8 @@ Autonomous Labs are designed to get started instantly with Oracle Autonomous Dat
 
 [Lab 3: Your Low-Code App in the Cloud (ATP)](https://alpsteam.github.io/autonomous-labs/lab-3/lab-3.html) Build your first low code application with Oracle APEX on Oracle Autonomous Transaction Processing.
 
+[Lab 4: Using Oracle in Database Machine Learning (ADW)](https://alpsteam.github.io/autonomous-labs/lab-4/lab-4.html) Setup a data science project using the Autonomous Datawarehouse in the Oracle Cloud.
+
 ## Issues
 
 If there are issues with this lab guide or you have feedback please tell us in the [issues section](https://github.com/alpsteam/autonomous-labs-template/issues) of this repository.
