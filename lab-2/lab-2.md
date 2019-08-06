@@ -9,19 +9,19 @@ In this lab we will build a small RESTful API with a lightweight [Helidon micros
 
 ## Table of contents
 
-* [Prerequisites](#prerequisites)
-* [Microservices and Oracle Database](#microservices-and-oracle-database)
-* [Lab guide](#lab-guide)
-   * [Access lab resources](#access-lab-resources)
-   * [Setup of Autonomous Database](#setup-of-autonomous-database)
-   * [Step-by-Step Guide](#step-by-step-guide)
-   * [Deploy to Kubernetes](#deploy-to-kubernetes)
-* [Next steps](#next-steps)
+1. [Prerequisites](#prerequisites)
+2. [Microservices and Oracle Database](#microservices-and-oracle-database)
+3. [Lab guide](#lab-guide)
+   1. [Access lab resources](#access-lab-resources)
+   2. [Setup of Autonomous Database](#setup-of-autonomous-database)
+   3. [Step-by-Step Guide](#step-by-step-guide)
+   4. [Deploy to Kubernetes](#deploy-to-kubernetes)
+4. [Next steps](#next-steps)
 
 ## Prerequisites
 
 - Docker runtime locally installed
-- An Oracle Cloud Account to provision a cloud database. You can go to [cloud.oracle.com](https://cloud.oracle.com) and get a 300$ free trial.
+- An Oracle Cloud Account to provision a cloud database.
 - A Kubernetes cluster to deploy the microservice to (e.g. a [managed OKE cluster](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengoverview.htm))
 
 ## Microservices and Oracle Database
@@ -90,22 +90,24 @@ Oracle Autonomous Database Cloud Service is an **ideal data management platform 
 
 ## Access lab resources
 
-To access the lab resources you can either clone this repository 
+We have compiled all assets into a Docker container, so there is no need to download any lab resources. If you want to review the lab resources anyway you can clone the Git repository or view the resources on Github.
+
+Viewing or downloading the lab resources **is optional**.
+
+[View source code](https://github.com/alpsteam/autonomous-labs/tree/master/lab-2/lab-2-resources){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ```shell
-git clone git@github.com:alpsteam/autonomous-labs.git
-cd autonomous-labs/lab-2/
+git clone https://github.com:alpsteam/autonomous-labs.git
+cd autonomous-labs/lab-2/lab-2-resources/
 ```
-
-or download the lab resources as a `.zip` file.
-
-[Download lab resources](https://github.com/alpsteam/autonomous-labs/raw/master/lab-2/lab-2-resources.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View source code](https://github.com/alpsteam/autonomous-labs/tree/master/lab-2/lab-2-resources){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ## Setup of Autonomous Database
 
+Login to your Oracle Cloud Account and head to `Autonomous Transaction Processing` from the hamburger menu in the top left.
+
 ### Create Database in OCI Console
 
-For our lab make sure to name your database "atp"!
+Create an ATP instance, for our lab make sure to **name your database `atp`** exactly! Click the video thumbnail below for detailed instructions.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=a38S_NY8WNk
 " target="_blank"><img src="http://img.youtube.com/vi/a38S_NY8WNk/0.jpg" 
@@ -123,40 +125,85 @@ Paste the SQL script [load_sql_table.sql](https://github.com/alpsteam/autonomous
 
 ## Step by Step Guide
 
+For our lab we need tools like Java, Maven, Oracle Cloud Infrastructure CLI (OCI CLI) and more. We have created a preconfigured Docker container for this lab, so the tools do not need to be installed.
+
 ### Run Docker Image
-In our lab we will need to run docker inside docker, this requires some specific startup flags. Caution: This is a serious security issue if you run it like this outside a safe lab environment. You will need to run docker inside the docker container with sudo.
+
+Since we will also build a Docker container for our lab, we need to run Docker inside Docker. This requires some specific startup flags. Don't use these flags in a production environment or outside of a safe lab environment.
 
 Mac/Linux:
 
 ```shell
-docker run -ti --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.0
+docker run -ti --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.1
 ```
 
 Windows:
 
 ```shell
-docker run -ti --rm --privileged -v //var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.0
+docker run -ti --rm --privileged -v //var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.1
 ```
 
+### Get the code 
+
+Run a `git clone` inside of the Docker container to get the lab resources and change directory.
+
+```
+git clone https://github.com/alpsteam/autonomous-labs.git
+cd autonomous-labs/lab-2/lab-2-resources/
+```
 
 ### OCI CLI setup
 
+We are going to use the OCI CLI to interact with Oracle Cloud. The CLI is already installed within the Docker container, but in order to link the CLI with your account the `oci_cli_setup.sh` script needs to be run. Every resource in Oracle Cloud has an `OCID` and we need to find the user OCID as well as the tenancy OCID to continue.
+
+Copy and save your `user OCID` by navigating to your profile.
+
+![Find user OCID](images/find-user-ocid.png)
+
+Copy and save your `tencany OCID` by navigating to your tenancy overview page.
+
+![Find tenancy OCID](images/find-tenancy-ocid.png)
+
+Then run
 ```shell
-./src/main/resources/oci_setup.sh
+chmod u+x src/main/resources/oci_cli_setup.sh
+./src/main/resources/oci_cli_setup.sh
 ```
+and enter all the necessary OCIDs. Hit `Enter` a couple of time to generate a new keypair without password. Add the public key you get as output from the script as API key in OCI console.
 
-Add the public key you get as output from the script as API key in OCI console.
+Copy the public key.
 
+![Copy public key](images/copy-public-key.png)
+
+Navigate to your user profile, in the bottom left you will find `API Keys`, hit `Add Public Key` and paste your key.
+
+![Add public API key](images/add-public-api-key.png)
+
+That's it, you have now configured the OCI CLI to work with your account.
 
 ### Get Autonomous Database Wallet via OCI CLI
 
+Next we will use the OCI CLI to download the Autonomous DB wallet (which contains all credentials and connection string to connect to the database). Therefor, we the the `Autonomous Database OCID`.
+
+![Find ATP OCID](images/find-atp-ocid.png)
+
+Next execute the `get_wallet.sh` script and enter the `Autonomous Database OCID` and the database password that you previously chose.
+
 ```shell
-./src/main/resources/get_wallet.sh [OCID of your Autonomous Database]
+chmod u+x src/main/resources/get_wallet.sh
+./src/main/resources/get_wallet.sh
 ```
 
 ### Build Service
 
 ```shell
+# add local resources
+RUN mvn install:install-file -Dfile=src/main/libs/ojdbc10.jar -DgroupId=com.oracle.jdbc -DartifactId=ojdbc10 -Dversion=19.3.0 -Dpackaging=jar && \
+mvn install:install-file -Dfile=src/main/libs/ucp.jar -DgroupId=com.oracle.jdbc -DartifactId=ucp -Dversion=19.3.0 -Dpackaging=jar && \
+mvn install:install-file -Dfile=src/main/libs/osdt_core.jar -DgroupId=com.oracle.jdbc -DartifactId=osdt_core -Dversion=19.3.0 -Dpackaging=jar && \
+mvn install:install-file -Dfile=src/main/libs/osdt_cert.jar -DgroupId=com.oracle.jdbc -DartifactId=osdt_cert -Dversion=19.3.0 -Dpackaging=jar && \
+mvn install:install-file -Dfile=src/main/libs/oraclepki.jar -DgroupId=com.oracle.jdbc -DartifactId=oraclepki -Dversion=19.3.0 -Dpackaging=jar 
+
 mvn package
 ```
 
@@ -179,6 +226,8 @@ cd target && sudo docker build -t priceservice:1.0 .
 
 
 ## Deploy to Kubernetes
+
+This lab assumes that you have a Kubernetes cluster up and running. You can easily create a managed K8s cluster with [OKE in Oracle Cloud](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengoverview.htm).
 
 ```
 kubectl create namespace lab

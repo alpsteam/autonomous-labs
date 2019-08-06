@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab 4: Using Oracle in Database Machine Learning
+title: Lab 4 Using Oracle in Database Machine Learning
 ---
 
 # 🚀 Lab 4: Using Oracle in Database Machine Learning
