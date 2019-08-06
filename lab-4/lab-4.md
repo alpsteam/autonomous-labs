@@ -213,5 +213,5 @@ Now you are ready to run the notebooks in oracle machine learning. In the notebo
 
 # <a name="Introduction-k-means"> 4. Introduction into k-means algorithm
 
-The machine learning example in this lab is built around the k-means algorithm. There is an [blog post](https://blogs.oracle.com/bigdata/k-means-clustering-machine-learning explaining this algorithm available on oracle blog
-and also a very good introduction on [datascience.com](https://www.datascience.com/blog/k-means-clustering)).
+The machine learning example in this lab is built around the k-means algorithm. There is an [Oracle blog post](https://blogs.oracle.com/bigdata/k-means-clustering-machine-learning) explaining this algorithm available
+and there is also a very good introduction on [datascience.com](https://www.datascience.com/blog/k-means-clustering).
