@@ -9,12 +9,19 @@ Build your first low code application with Oracle APEX on Oracle Autonomous Tran
 
 ## Table of contents
 
+* [APEX Lab as Youtube Video](#apex-lab-as-youtube-video)
 * [Prerequisites](#prerequisites)
 * [Introduction to your lab](#introduction-to-your-lab)
 * [Lab guide](#lab-guide)
    * [Access lab resources](#access-lab-resources)
    * [Step-by-Step Guide](#step-by-step-guide)
 
+## APEX Lab as Youtube Video
+
+You can view the contents of this lab as a Youtube video by clicking the thumbnail below.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=-wHhksetQv0" target="_blank"><img src="http://img.youtube.com/vi/-wHhksetQv0/0.jpg" 
+ border="10" /></a>
 
 ## Prerequisites
 

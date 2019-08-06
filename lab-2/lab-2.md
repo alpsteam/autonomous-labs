@@ -9,14 +9,14 @@ In this lab we will build a small RESTful API with a lightweight [Helidon micros
 
 ## Table of contents
 
-* [Prerequisites](#prerequisites)
-* [Microservices and Oracle Database](#microservices-and-oracle-database)
-* [Lab guide](#lab-guide)
-   * [Access lab resources](#access-lab-resources)
-   * [Setup of Autonomous Database](#setup-of-autonomous-database)
-   * [Step-by-Step Guide](#step-by-step-guide)
-   * [Deploy to Kubernetes](#deploy-to-kubernetes)
-* [Next steps](#next-steps)
+1. [Prerequisites](#prerequisites)
+2. [Microservices and Oracle Database](#microservices-and-oracle-database)
+3. [Lab guide](#lab-guide)
+   1. [Access lab resources](#access-lab-resources)
+   2. [Setup of Autonomous Database](#setup-of-autonomous-database)
+   3. [Step-by-Step Guide](#step-by-step-guide)
+   4. [Deploy to Kubernetes](#deploy-to-kubernetes)
+4. [Next steps](#next-steps)
 
 ## Prerequisites
 
@@ -90,22 +90,22 @@ Oracle Autonomous Database Cloud Service is an **ideal data management platform 
 
 ## Access lab resources
 
-To access the lab resources you can either clone this repository 
+We have compiled all assets into a Docker container, so there is no need to download any lab resources. If you want to review the lab resources anyway you can clone the Git repository or view the resources on Github.
 
 ```shell
-git clone git@github.com:alpsteam/autonomous-labs.git
-cd autonomous-labs/lab-2/
+git clone https://github.com:alpsteam/autonomous-labs.git
+cd autonomous-labs/lab-2/lab-2-resources/
 ```
 
 or download the lab resources as a `.zip` file.
 
-[Download lab resources](https://github.com/alpsteam/autonomous-labs/raw/master/lab-2/lab-2-resources.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View source code](https://github.com/alpsteam/autonomous-labs/tree/master/lab-2/lab-2-resources){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View source code](https://github.com/alpsteam/autonomous-labs/tree/master/lab-2/lab-2-resources){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ## Setup of Autonomous Database
 
 ### Create Database in OCI Console
 
-For our lab make sure to name your database "atp"!
+For our lab make sure to name your database `atp` exactly!
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=a38S_NY8WNk
 " target="_blank"><img src="http://img.youtube.com/vi/a38S_NY8WNk/0.jpg" 
