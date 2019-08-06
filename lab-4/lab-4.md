@@ -15,15 +15,14 @@ title: Lab 4 Using Oracle in Database Machine Learning
    3. [Importing data into Autonomous Data Warehouse](#import-adw)
    4. [Setup Oracle Machine Learning](#setup-oml)
 4. [Introduction into k-means algorithm](#Introduction-k-means)
-4. [Next steps](#next-steps)
-5. [Known issues](#issues)
-
 
 # 1. Prerequisites
 
 - An Oracle Cloud Account
 - Right permissions
-- Access to Oracle Cloud Console.
+- Access to Oracle Cloud Console
+- About 4-8h to walk through the Lab
+- Interest in Machine Learning concepts
 
 # 2. Introduction to your lab
 
@@ -67,7 +66,7 @@ The final view of the bucket should show the uploaded file similar to this image
 
 ![Architecture Overview](/lab-4/Images/step-1-5.png)
 
-Now note done the URL to access the file in Oracle Cloud Object storage for me this is 'https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/orasealps/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv'.
+Now note done the URL to access the file in Oracle Cloud Object storage for me this is 'https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/tenant/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv'.
 
 [![Get Object Storage URL](http://img.youtube.com/vi/bFw6PrdgOv8/0.jpg)](http://www.youtube.com/watch?v=bFw6PrdgOv8 "Object Storage URL")
 
@@ -82,9 +81,15 @@ At the end of this step make sure you noted down the following three values. We 
 | ------------- |:-------------------------------------------:|
 | OCI Username  | oracleidentitycloudservice/email@domain.com |
 | Auth Token    | gq[Jd4>tppwK}U>kBepg                        |
-| File URL      | https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/orasealps/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv     |
+| File URL      | https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/tenant/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv     |
 
 ## <a name="setup-adw"></a>Setting up Autonomous Data Warehouse
+
+Login into the OCI console and follow the steps in the following video to provision an ADW instance.
+[![Provision ADW](http://img.youtube.com/vi/eQJT-5by4Lg/0.jpg)](http://www.youtube.com/watch?v=eQJT-5by4Lg "OCI Provision ADW")
+
+
+
 
 ## <a name="import-adw"></a>Importing data into Autonomous Data Warehouse
 
@@ -168,7 +173,7 @@ SET DEFINE OFF
 BEGIN
   DBMS_CLOUD.CREATE_CREDENTIAL(
     credential_name => 'analystobjstorage',
-    username => 'oracleidentitycloudservice/michael.lessiak@oracle.com',
+    username => 'oracleidentitycloudservice/user.name@oracle.com',
     password => 'HxL1<2qf2eRS+fwW}j8W'
   );
 END;
@@ -181,7 +186,7 @@ BEGIN
  DBMS_CLOUD.COPY_DATA(
     table_name =>'OAC_TRANSACTIONS',
     credential_name =>'analystobjstorage',
-    file_uri_list =>'https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/orasealps/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv',
+    file_uri_list =>'https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/tenant/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv',
     format => json_object('delimiter' value ',')
  );
 END;
@@ -196,11 +201,17 @@ See the steps in the following video.
 
 [![Setup OML](http://img.youtube.com/vi/TDJ7DYs2k3s/0.jpg)](http://www.youtube.com/watch?v=TDJ7DYs2k3s "Setup OML")
 
+Next login to your Oracle Machine Learning instance and import the notebooks you find in the lab-4 notebooks folder.
+
+[![Login OML and import notebook](http://img.youtube.com/vi/hd0ofuv6R6M/0.jpg)](http://www.youtube.com/watch?v=hd0ofuv6R6M "Login OML and import notebook")
+
+It might be necessary to change the interpreter binding of the notebooks, see this video on how to do it.
+
+[![OML interpreter binding](http://img.youtube.com/vi/ngHFGv9EsBA/0.jpg)](http://www.youtube.com/watch?v=ngHFGv9EsBA "OML interpreter binding")
+
+Now you are ready to run the notebooks in oracle machine learning. In the notebooks you will find explanation of all the steps before you execute them.
+
 # <a name="Introduction-k-means"> 4. Introduction into k-means algorithm
 
-
-......
-
-# Next steps
-
-Here we can provide some next steps. We should give ideas what the lab participant can do next with the service. Oracle has lots of good resources (blogs etc.) thank we can link. 
+The machine learning example in this lab is built around the k-means algorithm. There is an [Oracle blog post](https://blogs.oracle.com/bigdata/k-means-clustering-machine-learning) explaining this algorithm available
+and there is also a very good introduction on [datascience.com](https://www.datascience.com/blog/k-means-clustering).
