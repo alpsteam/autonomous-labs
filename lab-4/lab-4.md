@@ -66,7 +66,7 @@ The final view of the bucket should show the uploaded file similar to this image
 
 ![Architecture Overview](/lab-4/Images/step-1-5.png)
 
-Now note done the URL to access the file in Oracle Cloud Object storage for me this is 'https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/orasealps/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv'.
+Now note done the URL to access the file in Oracle Cloud Object storage for me this is 'https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/tenant/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv'.
 
 [![Get Object Storage URL](http://img.youtube.com/vi/bFw6PrdgOv8/0.jpg)](http://www.youtube.com/watch?v=bFw6PrdgOv8 "Object Storage URL")
 
@@ -81,7 +81,7 @@ At the end of this step make sure you noted down the following three values. We 
 | ------------- |:-------------------------------------------:|
 | OCI Username  | oracleidentitycloudservice/email@domain.com |
 | Auth Token    | gq[Jd4>tppwK}U>kBepg                        |
-| File URL      | https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/orasealps/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv     |
+| File URL      | https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/tenant/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv     |
 
 ## <a name="setup-adw"></a>Setting up Autonomous Data Warehouse
 
@@ -173,7 +173,7 @@ SET DEFINE OFF
 BEGIN
   DBMS_CLOUD.CREATE_CREDENTIAL(
     credential_name => 'analystobjstorage',
-    username => 'oracleidentitycloudservice/michael.lessiak@oracle.com',
+    username => 'oracleidentitycloudservice/user.name@oracle.com',
     password => 'HxL1<2qf2eRS+fwW}j8W'
   );
 END;
@@ -186,7 +186,7 @@ BEGIN
  DBMS_CLOUD.COPY_DATA(
     table_name =>'OAC_TRANSACTIONS',
     credential_name =>'analystobjstorage',
-    file_uri_list =>'https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/orasealps/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv',
+    file_uri_list =>'https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/tenant/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv',
     format => json_object('delimiter' value ',')
  );
 END;
