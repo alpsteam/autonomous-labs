@@ -182,9 +182,15 @@ That's it, you have now configured the OCI CLI to work with your account.
 
 ### Get Autonomous Database Wallet via OCI CLI
 
+Next we will use the OCI CLI to download the Autonomous DB wallet (which contains all credentials and connection string to connect to the database). Therefor, we the the `Autonomous Database OCID`.
+
+![Find ATP OCID](images/find-atp-ocid.png)
+
+Next execute the `get_wallet.sh` script and enter the `Autonomous Database OCID` and the database password that you previously chose.
+
 ```shell
 chmod u+x src/main/resources/get_wallet.sh
-./src/main/resources/get_wallet.sh [OCID of your Autonomous Database]
+./src/main/resources/get_wallet.sh
 ```
 
 ### Build Service
