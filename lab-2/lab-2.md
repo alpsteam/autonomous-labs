@@ -21,7 +21,7 @@ In this lab we will build a small RESTful API with a lightweight [Helidon micros
 ## Prerequisites
 
 - Docker runtime locally installed
-- An Oracle Cloud Account to provision a cloud database. You can go to [cloud.oracle.com](https://cloud.oracle.com) and get a 300$ free trial.
+- An Oracle Cloud Account to provision a cloud database.
 - A Kubernetes cluster to deploy the microservice to (e.g. a [managed OKE cluster](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengoverview.htm))
 
 ## Microservices and Oracle Database
@@ -92,20 +92,22 @@ Oracle Autonomous Database Cloud Service is an **ideal data management platform 
 
 We have compiled all assets into a Docker container, so there is no need to download any lab resources. If you want to review the lab resources anyway you can clone the Git repository or view the resources on Github.
 
+Viewing or downloading the lab resources **is optional**.
+
+[View source code](https://github.com/alpsteam/autonomous-labs/tree/master/lab-2/lab-2-resources){: .btn .fs-5 .mb-4 .mb-md-0 }
+
 ```shell
 git clone https://github.com:alpsteam/autonomous-labs.git
 cd autonomous-labs/lab-2/lab-2-resources/
 ```
 
-or download the lab resources as a `.zip` file.
-
-[View source code](https://github.com/alpsteam/autonomous-labs/tree/master/lab-2/lab-2-resources){: .btn .fs-5 .mb-4 .mb-md-0 }
-
 ## Setup of Autonomous Database
+
+Login to your Oracle Cloud Account and head to `Autonomous Transaction Processing` from the hamburger menu in the top left.
 
 ### Create Database in OCI Console
 
-For our lab make sure to name your database `atp` exactly!
+Create an ATP instance, for our lab make sure to name your database `atp` exactly! Click the video thumbnail below for detailed instructions.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=a38S_NY8WNk
 " target="_blank"><img src="http://img.youtube.com/vi/a38S_NY8WNk/0.jpg" 
@@ -225,6 +227,8 @@ cd target && sudo docker build -t priceservice:1.0 .
 
 
 ## Deploy to Kubernetes
+
+This lab assumes that you have a Kubernetes cluster up and running. You can easily create a managed K8s cluster with [OKE in Oracle Cloud](https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengoverview.htm).
 
 ```
 kubectl create namespace lab
