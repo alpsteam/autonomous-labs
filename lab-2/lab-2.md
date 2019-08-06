@@ -141,16 +141,24 @@ docker run -ti --rm --privileged -v //var/run/docker.sock:/var/run/docker.sock m
 
 ### OCI CLI setup
 
-```shell
-./src/main/resources/oci_setup.sh
-```
+We are going to use the OCI CLI to interact with Oracle Cloud. In order to link the CLI with your account the `oci_cli_setup.sh` script needs to be run.
 
-Add the public key you get as output from the script as API key in OCI console.
+- User OCID
+- Tenancy OCID
+- Press enter multiple times (generate new key without pw)
+
+Then run
+```shell
+chmod u+x src/main/resources/oci_cli_setup.sh
+./src/main/resources/oci_cli_setup.sh
+```
+and all the necessary OCIDs. Add the public key you get as output from the script as API key in OCI console.
 
 
 ### Get Autonomous Database Wallet via OCI CLI
 
 ```shell
+chmod u+x src/main/resources/get_wallet.sh
 ./src/main/resources/get_wallet.sh [OCID of your Autonomous Database]
 ```
 
