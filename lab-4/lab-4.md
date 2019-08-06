@@ -16,7 +16,7 @@ title: Lab 4 Using Oracle in Database Machine Learning (ADW)
    4. [Setup Oracle Machine Learning](#setup-oml)
 4. [Introduction into k-means algorithm](#Introduction-k-means)
 
-# 1. Prerequisites
+# Prerequisites
 
 - An Oracle Cloud Account
 - Right permissions
@@ -24,7 +24,7 @@ title: Lab 4 Using Oracle in Database Machine Learning (ADW)
 - About 4-8h to walk through the Lab
 - Interest in Machine Learning concepts
 
-# 2. Introduction to your lab
+# Introduction to your lab
 
 The goal of this lab is to show the user how to setup a data science project using managed services provided
 in the Oracle Cloud. We will use [Oracle Autonomous Data Warehouse (ADW)](https://cloud.oracle.com/en_US/datawarehouse) to store our data and run the machine learning
@@ -38,7 +38,7 @@ to manage the database. Data will be imported via [Oracle Cloud Object Storage](
 
 ![Architecture Overview](Images/architecture_cut.jpg)
 
-# 3. Lab guide
+# Lab guide
 
 ## <a name="import-oci"></a>Importing data into Oracle Cloud Infrastructure Object Storage
 
