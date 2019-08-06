@@ -132,13 +132,13 @@ Since we will also build a Docker container for our lab, we need to run Docker i
 Mac/Linux:
 
 ```shell
-docker run -ti --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.0
+docker run -ti --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.1
 ```
 
 Windows:
 
 ```shell
-docker run -ti --rm --privileged -v //var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.0
+docker run -ti --rm --privileged -v //var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.1
 ```
 
 ### Get the code 
@@ -149,6 +149,7 @@ Run a `git clone` to get the lab resources and change directory.
 git clone https://github.com/alpsteam/autonomous-labs.git
 cd autonomous-labs/lab-2/lab-2-resources/
 ```
+
 
 ### OCI CLI setup
 
@@ -189,6 +190,13 @@ chmod u+x src/main/resources/get_wallet.sh
 ### Build Service
 
 ```shell
+# add local resources
+RUN mvn install:install-file -Dfile=src/main/libs/ojdbc10.jar -DgroupId=com.oracle.jdbc -DartifactId=ojdbc10 -Dversion=19.3.0 -Dpackaging=jar && \
+mvn install:install-file -Dfile=src/main/libs/ucp.jar -DgroupId=com.oracle.jdbc -DartifactId=ucp -Dversion=19.3.0 -Dpackaging=jar && \
+mvn install:install-file -Dfile=src/main/libs/osdt_core.jar -DgroupId=com.oracle.jdbc -DartifactId=osdt_core -Dversion=19.3.0 -Dpackaging=jar && \
+mvn install:install-file -Dfile=src/main/libs/osdt_cert.jar -DgroupId=com.oracle.jdbc -DartifactId=osdt_cert -Dversion=19.3.0 -Dpackaging=jar && \
+mvn install:install-file -Dfile=src/main/libs/oraclepki.jar -DgroupId=com.oracle.jdbc -DartifactId=oraclepki -Dversion=19.3.0 -Dpackaging=jar 
+
 mvn package
 ```
 
