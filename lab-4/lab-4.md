@@ -15,9 +15,6 @@ title: Lab 4: Using Oracle in Database Machine Learning
    3. [Importing data into Autonomous Data Warehouse](#import-adw)
    4. [Setup Oracle Machine Learning](#setup-oml)
 4. [Introduction into k-means algorithm](#Introduction-k-means)
-4. [Next steps](#next-steps)
-5. [Known issues](#issues)
-
 
 # 1. Prerequisites
 
