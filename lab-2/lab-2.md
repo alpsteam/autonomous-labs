@@ -123,8 +123,11 @@ Paste the SQL script [load_sql_table.sql](https://github.com/alpsteam/autonomous
 
 ## Step by Step Guide
 
+For our lab we need tools like Java, Maven, Oracle Cloud Infrastructure CLI (OCI CLI) and more. We have created a preconfigured Docker container for this lab, so the tools do not need to be installed.
+
 ### Run Docker Image
-In our lab we will need to run docker inside docker, this requires some specific startup flags. Caution: This is a serious security issue if you run it like this outside a safe lab environment. You will need to run docker inside the docker container with sudo.
+
+Since we will also build a Docker container for our lab, we need to run Docker inside Docker. This requires some specific startup flags. Don't use these flags in a production environment or outside of a safe lab environment.
 
 Mac/Linux:
 
@@ -138,22 +141,43 @@ Windows:
 docker run -ti --rm --privileged -v //var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.0
 ```
 
+### Get the code 
+
+Run a `git clone` to get the lab resources and change directory.
+
+```
+git clone https://github.com/alpsteam/autonomous-labs.git
+cd autonomous-labs/lab-2/lab-2-resources/
+```
 
 ### OCI CLI setup
 
-We are going to use the OCI CLI to interact with Oracle Cloud. In order to link the CLI with your account the `oci_cli_setup.sh` script needs to be run.
+We are going to use the OCI CLI to interact with Oracle Cloud. In order to link the CLI with your account the `oci_cli_setup.sh` script needs to be run. Every resource in Oracle Cloud has an `OCID` and we need to find the user OCID as well as the tenancy OCID to continue.
 
-- User OCID
-- Tenancy OCID
-- Press enter multiple times (generate new key without pw)
+Copy and save your `user OCID` by navigating to your profile.
+
+![Find user OCID](images/find-user-ocid.png)
+
+Copy and save your `tencany OCID` by navigating to your tenancy overview page.
+
+![Find tenancy OCID](images/find-tenancy-ocid.png)
 
 Then run
 ```shell
 chmod u+x src/main/resources/oci_cli_setup.sh
 ./src/main/resources/oci_cli_setup.sh
 ```
-and all the necessary OCIDs. Add the public key you get as output from the script as API key in OCI console.
+and enter all the necessary OCIDs. Hit enter a couple of time to generate a new keypair without password. Add the public key you get as output from the script as API key in OCI console.
 
+Copy the public key.
+
+![Copy public key](images/copy-public-key.png)
+
+Navigate to your user profile, in the bottom left you will find `API Keys`, hit `Add Public Key` and paste your key.
+
+![Add public API key](images/add-public-api-key.png)
+
+That's it, you have now configured the OCI CLI to work with your account.
 
 ### Get Autonomous Database Wallet via OCI CLI
 
