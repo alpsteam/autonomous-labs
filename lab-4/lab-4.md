@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab 4 Using Oracle in Database Machine Learning
+title: Lab 4 Using Oracle in Database Machine Learning (ADW)
 ---
 
 # 🚀 Lab 4: Using Oracle in Database Machine Learning
@@ -36,7 +36,7 @@ To setup the environment we will use [SQL Developer Web](https://docs.oracle.com
 to manage the database. Data will be imported via [Oracle Cloud Object Storage](https://docs.cloud.oracle.com/iaas/Content/Object/Concepts/objectstorageoverview.htm).
  
 
-![Architecture Overview](/lab-4/Images/architecture_cut.jpg)
+![Architecture Overview](Images/architecture_cut.jpg)
 
 # 3. Lab guide
 
@@ -46,25 +46,25 @@ Oracle Cloud Object Storage will be used as staging area to hold our data before
 Oracle Cloud Object Storage is a highly scalable service which can be used to store structured and unstructered data.
 First Login in into the Oracle Cloud Infrastructure web interface and select Object Storage from the left menu.
 
-![Architecture Overview](/lab-4/Images/step-1-1.png)
+![Architecture Overview](Images/step-1-1.png)
 
 To create a new bucket, which is kind of a folder to hold files, press the "Create Bucket" button. In the following
 window enter a bucket name e.g. "adw-lab4", leave all other values at the default and press "Create Bucket".
 
-![Architecture Overview](/lab-4/Images/step-1-2.png)
+![Architecture Overview](Images/step-1-2.png)
 
 Once the bucket is created select it from the Buckets Overview Window.
 
-![Architecture Overview](/lab-4/Images/step-1-3.png)
+![Architecture Overview](Images/step-1-3.png)
 
 First make sure that you downloaded the CSV file with the data. You can find it in the git repository in the data folder or under [Download CSV File](https://alpsteam.github.io/autonomous-labs/lab-x/Data/OAC_Transactions_trim.csv)
 In the following screen press "Upload Object" under Objects, select your file, press "Upload Objects" and then "Close" to upload your file into the newly created bucket.
 
-![Architecture Overview](/lab-4/Images/step-1-4.png)
+![Architecture Overview](Images/step-1-4.png)
 
 The final view of the bucket should show the uploaded file similar to this image.
 
-![Architecture Overview](/lab-4/Images/step-1-5.png)
+![Architecture Overview](Images/step-1-5.png)
 
 Now note done the URL to access the file in Oracle Cloud Object storage for me this is 'https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/tenant/b/autonomous-lab/o/OAC_TRANSACTIONS_trim.csv'.
 
