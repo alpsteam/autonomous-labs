@@ -1,6 +1,5 @@
-remote_theme: pmarsceill/just-the-docs
+remote_theme: alpsteam/just-the-docs
 search_enabled: true
 aux_links:
   "Autonomous Labs on GitHub":
     - "https://github.com/alpsteam/autonomous-labs"
-# color_scheme: nil
