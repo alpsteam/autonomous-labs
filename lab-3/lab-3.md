@@ -33,9 +33,9 @@ You can view the contents of this lab as a Youtube video by clicking the thumbna
 
 ### What is Oracle APEX?
 
-[Oracle Application Express (APEX)](https://apex.oracle.com/) is a low-code development platform that enables you to build scalable, secure enterprise apps, with world-class features, that can be deployed anywhere.
+[Oracle Application Express (APEX)](https://apex.oracle.com/) is a low-code development platform that enables you to easily build enterprise apps, with world-class features, that can be deployed anywhere.
 
-**Build scalable, secure enterprise apps. Fast.**
+> **Build scalable, secure enterprise apps. Fast.**
 
 Learning Oracle APEX is easy and it won't take long to pick up the basics. Check out the [learning section](https://apex.oracle.com/en/learn/) of APEX. For this lab, we don't require any prior experience with Oracle APEX.
 
