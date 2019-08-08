@@ -26,12 +26,26 @@ You can view the contents of this lab as a Youtube video by clicking the thumbna
 ## Prerequisites
 
 - An Oracle Cloud Account
-- Service limit + permission to create an Autonomous DB (ATP)
+- Web browser
+- 60-90 minutes to complete the lab
 
+## Introduction to APEX and Autonomous DB
 
-## Introduction to your lab
+### What is Oracle APEX?
 
-In this lab we will build a simple APEX Application.
+[Oracle Application Express (APEX)](https://apex.oracle.com/) is a low-code development platform that enables you to build scalable, secure enterprise apps, with world-class features, that can be deployed anywhere.
+
+**Build scalable, secure enterprise apps. Fast.**
+
+Learning Oracle APEX is easy and it won't take long to pick up the basics. Check out the [learning section](https://apex.oracle.com/en/learn/) of APEX. For this lab, we don't require any prior experience with Oracle APEX.
+
+### What is Oracle Autonomous DB?
+
+With Oracle Autonomous Database Cloud services, you can develop and deploy on a preconfigured, **fully managed, and secured  environment** (database including services like Oracle APEX) without any of the hassles of upkeep or manual maintenance.
+
+Oracle Autonomous Transaction Processing and Autonomous Data Warehouse deliver self-driving, self-securing, self-repairing database services that scale instantly to meet the demands of mission critical applications.
+
+No IT skills required, meaning you don't need to be a database administrator, network engineer, security expert, or systems architect. Oracle takes care of it all, from configuration, tuning, backup, to patching, encryption, scaling and more, so that you can concentrate on solving business problems.
 
 # Lab guide
 
