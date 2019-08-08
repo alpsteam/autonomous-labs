@@ -53,7 +53,7 @@ No IT skills required, meaning you don't need to be a database administrator, ne
 
 The only resource that you will need for this lab (except an Oracle Cloud Account) is the `sports2019.csv` file. You can download the file as a `.zip` below.
 
-[Download .zip file](https://github.com/alpsteam/autonomous-labs/raw/master/lab-3/lab-3-resources.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View .csv file](https://github.com/alpsteam/autonomous-labs/tree/master/lab-2/lab-2-resources){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Download .zip file](https://github.com/alpsteam/autonomous-labs/raw/master/lab-3/lab-3-resources.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View .csv file](https://github.com/alpsteam/autonomous-labs/tree/master/lab-3/sports2019.csv){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ## Step by Step Guide
 
