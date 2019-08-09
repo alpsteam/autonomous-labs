@@ -143,7 +143,7 @@ Windows:
 docker run -ti --rm --privileged -v //var/run/docker.sock:/var/run/docker.sock maxjahn/priceservice-standalone:1.1
 ```
 
-While the Docker container is downloading you can already continue with [https://alpsteam.github.io/autonomous-labs/lab-2/lab-2.html#oci-cli-setup](OCI CLI Setup) and come back later.
+While the Docker container is downloading you can already continue with [OCI CLI Setup](https://alpsteam.github.io/autonomous-labs/lab-2/lab-2.html#oci-cli-setup) and come back later.
 
 ### Get the code 
 
