@@ -145,7 +145,7 @@ Choose `Configure` to customize the data load.
 
 ![Image21](images/image21.jpg)
 
-Remove `COLUMN_`, `COL007` and `COL008` from the list of columns to load and `Save changes`.
+After the `Configure` screen has opened, switch to the `Columns to load` tab. Afterwards remove the columns `COLUMN_`, `COL007` and `COL008` by unticking them and `Save changes`.
 
 ![Image22](images/image22.jpg)
 
