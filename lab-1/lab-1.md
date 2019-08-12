@@ -38,32 +38,32 @@ title: Lab 1 Oracle Autonomous Cloud Services Labs
 ## Autonomous Data Warehouse Cloud (ADW)
 ## Autonomous Transaction Processing (ATP)
 
-In this hands-on lab you will get first-hand experience with the Oracle Autonomous Database Cloud. You’ll utilize the established, free workload generator “Swingbench”, which provides a selection of tailored workload profiles. The sections for ATP and ADW are self-contained and therefor can be executed separately or in combination. You will perform following workloads to exploit service features and to stress the abilities of ADW and ATP: 
+In this hands-on lab you will get first-hand experience with the Oracle Autonomous Database Cloud. You'll utilize the established, free workload generator "Swingbench", which provides a selection of tailored workload profiles. The sections for ATP and ADW are self-contained and therefor can be executed separately or in combination. You will perform following workloads to exploit service features and to stress the abilities of ADW and ATP: 
 
--	ATP – Swingbench “OrderEntry” is based on the "oe" demo schema that ships with the Oracle database, it introduces heavy contention on a small number of tables and is designed to stress interconnects and memory. 
--	ADW – Swingbench “SalesHistory” is based on the “sh” demo schema that ships with the Oracle database, it is read-only and designed to test the performance of complicated analytical queries running against large tables.
+-	ATP - Swingbench "OrderEntry" is based on the `oe` demo schema that ships with the Oracle database, it introduces heavy contention on a small number of tables and is designed to stress interconnects and memory. 
+-	ADW - Swingbench "SalesHistory" is based on the `sh` demo schema that ships with the Oracle database, it is read-only and designed to test the performance of complicated analytical queries running against large tables.
 
 In a first step, using the Oracle Cloud interface, you will provision the according Autonomous Database and see how you can connect your accustomed tools to your new database. You will make yourself familiar with the service console that enables you to administer and monitor your Autonomous Database(s).
 
-Next, we will upload two Data Pump export files containing the corresponding “on-premise” Swingbench demo schemas into the Oracle Cloud Object Storage.  With the help of the comfortable SQL Developer Import Wizard, we then will import those datasets into your Autonomous database(s).
+Next, we will upload two Data Pump export files containing the corresponding "on-premise" Swingbench demo schemas into the Oracle Cloud Object Storage.  With the help of the comfortable SQL Developer Import Wizard, we then will import those datasets into your Autonomous database(s).
 
-For the ADW workload, you will start the Swingbench Java client to connect to your ADW instance. You will start with a given number of active users busily executing a customizable set of sophisticated analytic queries (such as cubes, rollups, top-n, moving average) in parallel and observe performance indicators like number of queries executed and average response time. Then by doubling the number of users on the fly you will notice that query statements obviously start queuing since the response time will start to rise alarmingly. You’ll solve the situation by scaling the service online and without downtime to bring the response time back within assumed SLA limits. 
+For the ADW workload, you will start the Swingbench Java client to connect to your ADW instance. You will start with a given number of active users busily executing a customizable set of sophisticated analytic queries (such as cubes, rollups, top-n, moving average) in parallel and observe performance indicators like number of queries executed and average response time. Then by doubling the number of users on the fly you will notice that query statements obviously start queuing since the response time will start to rise alarmingly. You'll solve the situation by scaling the service online and without downtime to bring the response time back within assumed SLA limits. 
 
-For the ATP workload, and before starting the actual workload, you will use Oracle SQL Developer to understand how the provided consumer groups (High, Medium, Low) have been defined and how they will divide up resources. Next, you will start three parallel Swingbench clients, each with a number of users connecting to the distinct consumer groups, stressing the database, deliberately causing contention. You will observe how the users’ transactions will compete for resources and how the service will prioritize consumer groups according to the resource allocation plan. You then will provide more resources by scaling the service online and without downtime. Since the database now can “breath more freely” and contention is removed, all three consumer groups will benefit - as you will observe with the help of performance indicators like number of transactions executed and average response time.
+For the ATP workload, and before starting the actual workload, you will use Oracle SQL Developer to understand how the provided consumer groups (High, Medium, Low) have been defined and how they will divide up resources. Next, you will start three parallel Swingbench clients, each with a number of users connecting to the distinct consumer groups, stressing the database, deliberately causing contention. You will observe how the users transactions will compete for resources and how the service will prioritize consumer groups according to the resource allocation plan. You then will provide more resources by scaling the service online and without downtime. Since the database now can "breath more freely" and contention is removed, all three consumer groups will benefit - as you will observe with the help of performance indicators like number of transactions executed and average response time.
 
 Concluding the lab, you will cease Swingbench workloads and terminate your Autonomous Databases using the Oracle Cloud console.
 
 
 ## About Autonomous Database Cloud
 
-Oracle’s unique autonomous database framework ensures high availability and automatic security–without requiring any additional tasks. Scale as needed - create and expand your database compute and storage capacity on demand and independently of each other with no downtime. Pay only for the resources you consume.  It integrates directly with the full spectrum of business analytics, data integration and IoT services within Oracle's comprehensive range of integrated cloud solutions. All aspects of performance tuning are automatically managed so the service requires no database tuning. 
+Oracle's unique autonomous database framework ensures high availability and automatic security - without requiring any additional tasks. Scale as needed - create and expand your database compute and storage capacity on demand and independently of each other with no downtime. Pay only for the resources you consume.  It integrates directly with the full spectrum of business analytics, data integration and IoT services within Oracle's comprehensive range of integrated cloud solutions. All aspects of performance tuning are automatically managed so the service requires no database tuning. 
 
 The Oracle Autonomous Data Warehouse Cloud provides an easy-to-use, fully autonomous database that scales elastically, delivers fast query performance and requires no database administration. It is a fully-managed cloud service that makes it very simple to provision a data warehouse, and to quickly and easily load data and query that data using built-in web-based tools such as notebooks. It delivers high performance data warehousing straight out-of-the-box with unparalleled scalability and reliability. It is built on key Oracle Database capabilities: parallelism, columnar processing and compression. 
 
 Autonomous Transaction Processing provisions mission-critical, scale-out databases and
 supports a complex mix of high-performance transactions, but also reporting, batch, IoT, and machine learning in a single database, allowing much simpler application development and deployment.
 
-This is an instructor led lab, please follow the instructor’s guidance before doing the exercises. Stop and wait for indications before moving on to the next section. 
+This is an instructor led lab, please follow the instructor's guidance before doing the exercises. Stop and wait for indications before moving on to the next section. 
 
 ## Prerequisites
 
@@ -85,7 +85,7 @@ Oracle SQL Developer is a free, integrated development environment that simplifi
 
 (https://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html)
 
-Make sure to accept the License Agreement or the download option won’t appear. 
+Make sure to accept the License Agreement or the download option won't appear. 
 Then select your appropriate architecture and download.
 
 PLEASE NOTE Mac OS X and Linux: Java SE Development Kit 8u181 is required and can be installed from here (please read SQL Developer installation notes for Max OSX and Linux RPM:
@@ -114,7 +114,7 @@ For older versions of Windows, you can download and install BASH
 
 ### Installing Java JRE 1.8xx:
 
-Swingbench requires Java 8 to run. You must install it if you don’t have it installed. Please notice of you already have SQL Developer running then you have the correct Java installed already. You can test to see if you have it installed by running the following command in command prompt window.
+Swingbench requires Java 8 to run. You must install it if you don't have it installed. Please notice of you already have SQL Developer running then you have the correct Java installed already. You can test to see if you have it installed by running the following command in command prompt window.
 
 java -version
 
@@ -195,7 +195,7 @@ Click Create Autonomous Database to start provisioning the instance
 
 ![I10](images/i10.png)
 
-7.	The new instance is listed on the service home page in the Provisioning State. Monitor it until the state changes to “Available”
+7.	The new instance is listed on the service home page in the Provisioning State. Monitor it until the state changes to `Available`.
 
 ![I11](images/i11.png)
 
@@ -236,7 +236,7 @@ Role: default
 Configuration File: Browse to the location of the zipped wallet and select it 
 Service: adw1_low 
 
-### If you’re connecting from behind a proxy, please enter the proxy host and port settings as directed by the instructor.
+### If you're connecting from behind a proxy, please enter the proxy host and port settings as directed by the instructor.
 
 ![I17](images/i17.png)
 
@@ -378,7 +378,7 @@ Connection Type: Cloud Wallet
 Configuration file: Browse to the location of the zipped wallet and select it
 Service: adw1_high
 
-Note: If you’re connecting from behind a proxy, please enter the proxy host and port settings as directed by the instructor.
+Note: If you're connecting from behind a proxy, please enter the proxy host and port settings as directed by the instructor.
 
 Click Test to check the connection.
 
@@ -460,7 +460,7 @@ Click Next
 
 ![I49](images/i49.png)
 
-16.	Once the status changes to “NOT RUNNING”, connect to adw1_ssh and execute
+16.	Once the status changes to `NOT RUNNING`, connect to adw1_ssh and execute
 
 ```shell
 Select count(*) from sales;
@@ -488,7 +488,7 @@ Password: Welcome12345
 Connect String: adw1_high
 Credential File: Browse to the wallet file generated for ADW instance
 
-Note: We would first connect to the “adw1_high” consumer group with highest resource utilization.
+Note: We would first connect to the `adw1_high` consumer group with highest resource utilization.
 
 ![I53](images/i53.png)
 
@@ -541,7 +541,7 @@ ADW allows the users to scale up compute and storage individually without any do
 
 ![I62](images/i62.png)
 
-You also have the option to auto scale where the resources will be auto allocated up to three times the base count to meet the workload. As part of this workshop, we won’t enable the auto scaling option.
+You also have the option to auto scale where the resources will be auto allocated up to three times the base count to meet the workload. As part of this workshop, we won't enable the auto scaling option.
 
 11.	Scaling is in progress
 
@@ -563,15 +563,17 @@ High, Medium and Low are the three different consumer groups associated with an 
 
 The basic characteristics of the consumer groups are as below:
 
-HIGH –
-•	Highest resources, lowest concurrency
-•	Queries run in parallel
-MEDIUM –
-•	Less resources, higher concurrency
-•	Queries run in parallel 
-LOW –
-•	Least resources, highest concurrency
-•	Queries run serially
+HIGH
+- Highest resources, lowest concurrency
+- Queries run in parallel
+
+MEDIUM
+- Less resources, higher concurrency
+- Queries run in parallel 
+
+LOW
+- Least resources, highest concurrency
+- Queries run serially
 
 Let us compare the difference in performance between the three consumer groups using Swingbench.
 1.	Please use the xml file and the sh file (provided in pre-requisites) to start the swingbench for high, medium and low simultaneously.
@@ -643,14 +645,14 @@ You can click the Time Period button to see historical activity if you want to s
 
 This page allows you to select a time period using the calendar. By default, ADW stores performance data for the past 8 days.
 
-Click the Monitor SQL tab to look at the SQL statements in your instance. This page shows you a list of long running statements that are running or were completed.  You can see if the statement is running, completed, or queued, the start and end time, duration, etc…
+Click the Monitor SQL tab to look at the SQL statements in your instance. This page shows you a list of long running statements that are running or were completed.  You can see if the statement is running, completed, or queued, the start and end time, duration, etc...
 
 
 ![I70](images/i70.png)
 
 To download an active real-time SQL Monitor report for a statement, select that statement and click the Download Report button. This will save a local SQL Monitor report to your client machine.
 
-To see the detailed execution plan for a statement, select that statement and click the Show Details button. This shows you more detailed information on the statement, like the full SQL text, database activity, IO activity, etc…
+To see the detailed execution plan for a statement, select that statement and click the Show Details button. This shows you more detailed information on the statement, like the full SQL text, database activity, IO activity, etc...
 
 
 ![I71](images/i71.png)
@@ -745,7 +747,7 @@ Role: Default
 Configuration File: Browse to the location of the zipped wallet and select it
 Service: atp1_low
 
-Note: If you’re connecting from behind a proxy, please enter the proxy host and port settings as directed by the instructor.
+Note: If you're connecting from behind a proxy, please enter the proxy host and port settings as directed by the instructor.
 
 Click Test to check the connection.
 
@@ -887,7 +889,7 @@ Click Next
 
 ![I100](images/i100.png)
 
-16.	Once the status changes to “NOT RUNNING”, connect to atp1_soe and execute
+16.	Once the status changes to `NOT RUNNING`, connect to atp1_soe and execute
 
 ```shell
 select count(*) from orders;
@@ -916,7 +918,7 @@ Connect String: atp1_high
 Click on Connect to Oracle cloud Service
 Credential File: Browse to the wallet file generated for ADW instance
 
-Note: We would first connect to “atp1_high” consumer group for highest resource utilization.
+Note: We would first connect to `atp1_high` consumer group for highest resource utilization.
 
 
 ![I104](images/i104.png)
@@ -985,15 +987,15 @@ High, Medium and Low are the three different consumer groups associated with an 
 
 The basic characteristics of the consumer groups are as below:
 
-HIGH –
-•	Highest resources, lowest concurrency
-•	Queries run in parallel
-MEDIUM –
-•	Less resources, higher concurrency
-•	Queries run in parallel 
-LOW –
-•	Least resources, highest concurrency
-•	Queries run serially
+HIGH
+- Highest resources, lowest concurrency
+- Queries run in parallel
+MEDIUM
+- Less resources, higher concurrency
+- Queries run in parallel 
+LOW
+- Least resources, highest concurrency
+- Queries run serially
 
 
 Let us compare the difference in performance between the three consumer groups using Swingbench.
@@ -1067,14 +1069,14 @@ You can click the Time Period button to see historical activity if you want to s
 
 This page allows you to select a time period using the calendar. By default, ATP stores performance data for the past 8 days.
 
-Click the Monitor SQL tab to look at the SQL statements in your instance. This page shows you a list of long running statements that are running or were completed.  You can see if the statement is running, completed, or queued, the start and end time, duration, etc…
+Click the Monitor SQL tab to look at the SQL statements in your instance. This page shows you a list of long running statements that are running or were completed.  You can see if the statement is running, completed, or queued, the start and end time, duration, etc...
 
 
 ![I120](images/i120.png)
 
 To download an active real-time SQL Monitor report for a statement, select that statement and click the Download Report button. This will save a local SQL Monitor report to your client machine.
 
-To see the detailed execution plan for a statement, select that statement and click the Show Details button. This shows you more detailed information on the statement, like the full SQL text, database activity, IO activity, etc…
+To see the detailed execution plan for a statement, select that statement and click the Show Details button. This shows you more detailed information on the statement, like the full SQL text, database activity, IO activity, etc...
 
 ![I121](images/i121.png)
 
