@@ -49,6 +49,10 @@ No IT skills required, meaning you don't need to be a database administrator, ne
 
 # Lab guide
 
+In this lab we will convert a `.csv` spreadsheet into a web application with Oracle APEX. The application will be fully managed and serverless on Autonomous Database.
+
+![Spreadsheet to web app](images/image52.png)
+
 ## Access lab resources
 
 The only resource that you will need for this lab (except an Oracle Cloud Account) is the `sports2019.csv` file. You can download the file as a `.zip` below.
