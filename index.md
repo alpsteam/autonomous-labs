@@ -24,7 +24,7 @@ Autonomous Labs are designed to get started instantly with Oracle Autonomous Dat
 
 ## Issues
 
-If there are issues with this lab guide or you have feedback please tell us in the [issues section](https://github.com/alpsteam/autonomous-labs-template/issues) of this repository.
+If there are issues with this lab guide or you have feedback please tell us in the [issues section](https://github.com/alpsteam/autonomous-labs/issues) of this repository.
 
 
 
