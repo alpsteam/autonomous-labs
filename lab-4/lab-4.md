@@ -57,7 +57,7 @@ Once the bucket is created select it from the Buckets Overview Window.
 
 ![Architecture Overview](Images/step-1-3.png)
 
-First make sure that you downloaded the CSV file with the data. You can find it in the git repository in the data folder or under [Download CSV File](https://alpsteam.github.io/autonomous-labs/lab-x/Data/OAC_Transactions_trim.csv)
+First make sure that you downloaded the CSV file with the data. You can find it in the git repository in the data folder or under [Download CSV File](https://github.com/alpsteam/autonomous-labs/raw/master/lab-4/lab-4.zip)
 In the following screen press "Upload Object" under Objects, select your file, press "Upload Objects" and then "Close" to upload your file into the newly created bucket.
 
 ![Architecture Overview](Images/step-1-4.png)
