@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Learning path 4 APEX on Autonomous DB (ATP)
+title: Lab 3 APEX on Autonomous DB (ATP)
 ---
 
 # 🚀 Learning path: APEX on Autonomous DB (ATP)
