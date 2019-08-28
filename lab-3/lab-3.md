@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Lab 3 APEX on Autonomous DB (ATP)
+nav_exclude: true
+
 ---
 
 # 🚀 Lab 3: APEX on Autonomous DB (ATP)
