@@ -10,13 +10,13 @@ Build your first low code application with Oracle APEX on Oracle Autonomous Tran
 ## Table of contents
 
 * [What is Oracle APEX?](#what-is-oracle-apex)
-* [What is Oracle Autonomous DB?](#what-is-oracle-oracle-autonomous-db)
+* [What is Oracle Autonomous DB?](#what-is-oracle-autonomous-db)
 * [Learning path](#learning-path)
-   * [Lab 1: Spreadsheet](#Lab-1-Spreadsheet-(APEX-on-Autonomous))
-   * [Lab 2: Existing tables](#Lab-2-Existing-tables-(APEX-on-Autonomous))
-   * [Lab 3: Proof-of-Concept](#Lab-3-Proof-of-Concept-(APEX-on-Autonomous))
-   * [Lab 4: REST Lab](#Lab-4-REST-Lab-(APEX-on-Autonomous))
-   * [Lab 5: Remote Tables](#Lab-5-Remote-Tables-(APEX-on-Autonomous))
+   * [Lab 1: Spreadsheets](#Lab-1-Spreadsheets)
+   * [Lab 2: Existing tables](#Lab-2-Existing-tables)
+   * [Lab 3: Proof-of-Concept](#Lab-3-Proof-of-Concept)
+   * [Lab 4: REST Services](#Lab-4-REST-Services)
+   * [Lab 5: Remote Tables](#Lab-5-Remote-Tables)
 
 ### What is Oracle APEX?
 
@@ -38,11 +38,11 @@ No IT skills required, meaning you don't need to be a database administrator, ne
 
 There are six lessons available to turn you into an APEX champion.
 
-#### Prerequisites
+### Prerequisites
 
 The only prerequisite is completing the `Getting started with Autonomous DB` lab. These lab guides assume you have access to an Autonomous Transaction Processing DB (ATP) instance.
 
-## Lab 1 Spreadsheet (APEX on Autonomous) 
+## Lab 1 Spreadsheets
 
 While all of this sounds daunting you will be amazed at how quickly you went from a spreadsheet to a fully featured, responsive Web app.
 
@@ -55,9 +55,9 @@ While all of this sounds daunting you will be amazed at how quickly you went fro
 
 [Download lab guide 1](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-spreadsheet-atp-hol-5586153.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
-or alternatively [this lab guide](https://alpsteam.github.io/autonomous-labs/lab-3/lab-3.html#lab-guide).
+or alternatively [this lab guide](https://alpsteam.github.io/autonomous-labs/lab-3/lab-3-original.html#lab-guide).
 
-## Lab 2 Existing Tables (APEX on Autonomous) 
+## Lab 2 Existing Tables
 
 See just how quickly and easily you can build impressive apps on top of your existing data.
 
@@ -70,7 +70,7 @@ See just how quickly and easily you can build impressive apps on top of your exi
 
 [Download lab guide 2](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-existing-tables-atp-hol-5586154.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
-## Lab 3 Proof-of-Concept (APEX on Autonomous) 
+## Lab 3 Proof-of-Concept 
 
 Who knew creating new database tables could be so easy, and then just as easy to build a great app on top of those tables.
 
@@ -85,7 +85,7 @@ Required Files: [QuickSQL Shorthand Script](http://www.oracle.com/technetwork/de
 
 [Download lab guide 3](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-poc-atp-hol-5586155.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
-## Lab 4 REST Lab (APEX on Autonomous) 
+## Lab 4 REST Services
 
 Learn just how easy it is to build Oracle APEX apps utilizing RESTful Services.
 
@@ -101,7 +101,7 @@ Learn just how easy it is to build Oracle APEX apps utilizing RESTful Services.
 
 [Download lab guide 4](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-rest-atp-hol-5586156.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
-## Lab 5 Remote Tables (APEX on Autonomous) 
+## Lab 5 Remote Tables
 
 Learn how to manipulate data using simple SQL and charts to gain new insights.
 
