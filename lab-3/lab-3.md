@@ -36,7 +36,7 @@ No IT skills required, meaning you don't need to be a database administrator, ne
 
 # Learning path
 
-There are six lessons available to turn you into an APEX champion. We recommend doing the lab guides in this order.
+There are five lessons available to turn you into an APEX champion. We recommend doing the lab guides in this order.
 
 ### Prerequisites
 
