@@ -12,11 +12,11 @@ Build your first low code application with Oracle APEX on Oracle Autonomous Tran
 * [What is Oracle APEX?](#what-is-oracle-apex)
 * [What is Oracle Autonomous DB?](#what-is-oracle-autonomous-db)
 * [Learning path](#learning-path)
-   * [Lab 1: Spreadsheets](#Lab-1-Spreadsheets)
-   * [Lab 2: Existing tables](#Lab-2-Existing-tables)
-   * [Lab 3: Proof-of-Concept](#Lab-3-Proof-of-Concept)
-   * [Lab 4: REST Services](#Lab-4-REST-Services)
-   * [Lab 5: Remote Tables](#Lab-5-Remote-Tables)
+   * [Lab 1: Spreadsheets](#lab-1-spreadsheets)
+   * [Lab 2: Existing tables](#lab-2-existing-tables)
+   * [Lab 3: Proof-of-Concept](#lab-3-proof-of-concept)
+   * [Lab 4: REST Services](#lab-4-rest-services)
+   * [Lab 5: Remote Tables](#lab-5-remote-tables)
 
 ### What is Oracle APEX?
 
@@ -53,7 +53,7 @@ While all of this sounds daunting you will be amazed at how quickly you went fro
     - Updating the Interactive Report
     - Creating a Calendar
 
-[Download lab guide 1](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-spreadsheet-atp-hol-5586153.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Download lab guide 1: Spreadsheets](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-spreadsheet-atp-hol-5586153.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 or alternatively [this lab guide](https://alpsteam.github.io/autonomous-labs/lab-3/lab-3-original.html#lab-guide).
 
@@ -68,7 +68,7 @@ See just how quickly and easily you can build impressive apps on top of your exi
     - Use the Create App Wizard to create an app on existing tables
     - Make several minor improvements to improve the usability of the application
 
-[Download lab guide 2](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-existing-tables-atp-hol-5586154.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Download lab guide 2: Existing tables](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-existing-tables-atp-hol-5586154.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ## Lab 3 Proof-of-Concept 
 
@@ -83,7 +83,7 @@ Who knew creating new database tables could be so easy, and then just as easy to
 
 Required Files: [QuickSQL Shorthand Script](http://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-beginner-quicksql-5095785.txt)
 
-[Download lab guide 3](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-poc-atp-hol-5586155.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Download lab guide 3: Proof-of-Concept](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-poc-atp-hol-5586155.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ## Lab 4 REST Services
 
@@ -99,7 +99,7 @@ Learn just how easy it is to build Oracle APEX apps utilizing RESTful Services.
     - Implement a function using APEX_EXEC
     - Define a List of Values based on a REST Service
 
-[Download lab guide 4](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-rest-atp-hol-5586156.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Download lab guide 4: REST](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-rest-atp-hol-5586156.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ## Lab 5 Remote Tables
 
@@ -114,7 +114,7 @@ Learn how to manipulate data using simple SQL and charts to gain new insights.
     - Define a chart with three differenet series
     - Define a select list to drive the chart
 
- [Download lab guide 5](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-remote-table-atp-hol-5644348.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+ [Download lab guide 5: Remote tables](https://www.oracle.com/technetwork/developer-tools/apex/application-express/apex-remote-table-atp-hol-5644348.pdf){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 
 
