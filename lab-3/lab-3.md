@@ -36,15 +36,15 @@ No IT skills required, meaning you don't need to be a database administrator, ne
 
 # Learning path
 
-There are six lessons available to turn you into an APEX champion.
+There are six lessons available to turn you into an APEX champion. We recommend doing the lab guides in this order.
 
 ### Prerequisites
 
-The only prerequisite is completing the `Getting started with Autonomous DB` lab. These lab guides assume you have access to an Autonomous Transaction Processing DB (ATP) instance.
+The only prerequisite is completing the `Provision your first Autonomous DB` lab. These lab guides assume you have access to an Autonomous Transaction Processing DB (ATP) instance.
 
 ## Lab 1 Spreadsheets
 
-While all of this sounds daunting you will be amazed at how quickly you went from a spreadsheet to a fully featured, responsive Web app.
+You will be amazed at how quickly you went from a spreadsheet to a fully featured, responsive Web app.
 
 - Duration: 1 hour
 - Intended Audience: Novice / No experience
