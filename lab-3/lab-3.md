@@ -40,7 +40,7 @@ There are five lessons available to turn you into an APEX champion. We recommend
 
 ### Prerequisites
 
-The only prerequisite is completing the `Provision your first Autonomous DB` lab. These lab guides assume you have access to an Autonomous Transaction Processing DB (ATP) instance.
+The only prerequisite is completing the [Lab Zero: Provision your first Autonomous DB](https://alpsteam.github.io/autonomous-labs/lab-0/lab-0.html). Make sure to provision an `ATP` instance and not an `ADW` instance. These lab guides assume you have access to a running Autonomous Transaction Processing DB (ATP) instance.
 
 ## Lab 1 Spreadsheets
 
