@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Lab 1 Oracle Autonomous Cloud Services Labs
+title: Lab 1 Oracle Autonomous Cloud Scaling (ADW)
 ---
 
-# 🚀 Lab 1: Oracle Autonomous Cloud Services Labs
+# 🚀 Lab 1: Oracle Autonomous Cloud Scaling (ADW)
 
 
 ## Table of contents

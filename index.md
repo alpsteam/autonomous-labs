@@ -10,11 +10,13 @@ permalink: /
 Autonomous Labs are designed to get started instantly with Oracle Autonomous Database. All labs are hands-on and students will create a small application to build upon.
 {: .fs-6 .fw-300 }
 
-[Get started now](https://alpsteam.github.io/autonomous-labs/lab-2/lab-2.html){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/alpsteam/autonomous-labs){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get started now](https://alpsteam.github.io/autonomous-labs/lab-0/lab-0.html){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/alpsteam/autonomous-labs){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ## Labs
 
-[Lab 1: Your DB in the Cloud (ATP)](https://alpsteam.github.io/autonomous-labs/lab-1/lab-1.html) Get started with Oracle Autonomous Database and run a benchmark test with Swingbench. 
+[Lab 0: Provision your first Autonomous DB](https://alpsteam.github.io/autonomous-labs/lab-0/lab-0.html) Learn how to provision your first Oracle Autonomous Database. 
+
+[Lab 1: Your DB in the Cloud (ADW)](https://alpsteam.github.io/autonomous-labs/lab-1/lab-1.html) Get started with Oracle Autonomous Database and run a benchmark test with Swingbench. 
 
 [Lab 2: Microservices with Autonomous Database (ATP)](https://alpsteam.github.io/autonomous-labs/lab-2/lab-2.html) Learn how to deploy a microservice with Autonomous DB as data persistance layer. 
 
