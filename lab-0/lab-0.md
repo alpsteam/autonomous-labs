@@ -7,6 +7,14 @@ title: Lab 0 Provision your first Autonomous DB
 
 Learn how to deploy your first Oracle Autonomous DB in less than five minutes. You can complete this lab to either provision an `Autonomous Data Warehouse` or an `Autonomous Transaction Processing` database.
 
+## Table of contents
+
+* [What is Oracle Autonomous DB?](#what-is-oracle-autonomous-db)
+* [Lab guide](#lab-guide)
+   * [Prerequisites](#prerequisites)
+   * [Video guide](#video-guide)
+   * [Step-by-Step Guide](#step-by-step-guide)
+
 ### What is Oracle Autonomous DB?
 
 With Oracle Autonomous Database Cloud services, you can develop and deploy on a preconfigured, **fully managed, and secured  environment** (database including services like Oracle APEX, Machine Learning notebooks, etc.) without any of the hassles of upkeep or manual maintenance.
@@ -19,6 +27,13 @@ Oracle Autonomous DB comes in two flavors:
 
 ![Oracle Autonomous DB comes in two flavors](images/autonomous-db.png)
 
+# Lab guide
+
+### Prerequisites
+
+- Oracle Cloud Account
+- 5 minutes of time
+
 ## Video guide
 
 Click the video thumbnail to see a step-by-step video of how to create a serverless ATP database. Alternatively, you can follow the [step-by-step guide](#step-by-step-guide) below.
@@ -28,11 +43,6 @@ Click the video thumbnail to see a step-by-step video of how to create a serverl
  border="10" /></a>
 
 ## Step-by-step Guide
-
-### Prerequisites
-
-- Oracle Cloud Account
-- 5 minutes of time
 
 Head to the [Oracle Cloud login page](https://cloud.oracle.com/en_US/sign-in) and enter your tenancy name.
 
