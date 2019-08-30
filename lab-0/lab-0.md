@@ -19,7 +19,15 @@ Oracle Autonomous DB comes in two flavors:
 
 ![Oracle Autonomous DB comes in two flavors](images/autonomous-db.png)
 
-## Step by Step Guide
+## Video guide
+
+Click the video thumbnail to see a step-by-step video of how to create a serverless ATP database. Alternatively, you can follow the [step-by-step guide](#step-by-step-guide) below.
+
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=a38S_NY8WNk
+" target="_blank"><img src="https://img.youtube.com/vi/a38S_NY8WNk/0.jpg" 
+ border="10" /></a>
+
+## Step-by-step Guide
 
 ### Prerequisites
 
@@ -34,7 +42,7 @@ Enter your login credentials for your tenancy.
 
 ![Image2](images/image2.png)
 
-From the hamburger menu in the top left, choose `Autonomous Transaction Processing`. The, create a database.
+From the hamburger menu in the top left, choose `Autonomous Transaction Processing`. Then, create a database.
 
 ![Image3](images/image3.png)
 
