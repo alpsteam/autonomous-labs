@@ -1,13 +1,11 @@
 ---
 layout: default
 title: Lab Zero Provision your first Autonomous DB
-nav_exclude: true
-
 ---
 
 # 🚀 Lab Zero: Provision your first Autonomous DB
 
-Deploy your first Oracle Autonomous DB in less than five minutes.
+Learn how to deploy your first Oracle Autonomous DB in less than five minutes. You can complete this lab to either provision an `Autonomous Data Warehouse` or an `Autonomous Transaction Processing` database.
 
 ### What is Oracle Autonomous DB?
 
