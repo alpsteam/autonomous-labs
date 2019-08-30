@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab Zero Provision your first Autonomous DB
+title: Lab 0 Provision your first Autonomous DB
 ---
 
 # 🚀 Lab Zero: Provision your first Autonomous DB
@@ -18,8 +18,6 @@ No IT skills required, meaning you don't need to be a database administrator, ne
 Oracle Autonomous DB comes in two flavors:
 
 ![Oracle Autonomous DB comes in two flavors](images/autonomous-db.png)
-
-### Step-by-step guide
 
 ## Step by Step Guide
 
