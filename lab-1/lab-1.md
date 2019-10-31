@@ -130,7 +130,7 @@ Download swingbench from:
 
 For the section, to run the workload on swingbench and compare between the different consumer groups, you would require an xml file and .sh file. Attached are the files, please download and save it in your local repository.
 
-[Download .zip file lab 1 resources](https://github.com/alpsteam/autonomous-labs/raw/master/lab-1/lab-1-resources.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Download .zip file lab 1 resources](https://objectstorage.eu-frankfurt-1.oraclecloud.com/p/GJC0cwHjXCBoaLbhxX_3MXUG3Gxq1Prlng_kRS86FsY/n/orasealps/b/public-stuff/o/autonomousAutonomous%20LAB1.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ## Autonomous Data Warehouse
 
