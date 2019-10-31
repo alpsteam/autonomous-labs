@@ -78,7 +78,7 @@ You will be allocated with the cloud account details( identity domain, username 
 ## Set the data files
 We will use a .dmp file as an example to load it in object store and in turn import the same using SQL Developer. There are two dump files- One for ADW and the other one for ATP. The dumpfiles are zipped and attached below. Please download the zip file and save it in your local repository and unzip the same.
 
-[Download .zip file dumpfiles](https://github.com/alpsteam/autonomous-labs/raw/master/lab-1/Dumpfiles.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Download .zip file dumpfiles](https://objectstorage.eu-frankfurt-1.oraclecloud.com/p/GJC0cwHjXCBoaLbhxX_3MXUG3Gxq1Prlng_kRS86FsY/n/orasealps/b/public-stuff/o/autonomousAutonomous%20LAB1.zip){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ## Oracle SQL Developer
 Oracle SQL Developer is a free, integrated development environment that simplifies the development and management of Oracle Database in both traditional and Cloud deployments. SQL Developer offers a worksheet for running queries and scripts, a DBA console for managing the database, a reports interface, a complete data modelling solution, and a migration platform for moving your 3rd party databases to Oracle.
